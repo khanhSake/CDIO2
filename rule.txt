@@ -1,0 +1,136 @@
+# QUY TẮC LẬP TRÌNH - ONLINE GYM MANAGEMENT SYSTEM
+
+## CẤU TRÚC THƯ MỤC
+- `assets/`: Chứa tất cả tài nguyên tĩnh
+  - `css/`: Chứa tất cả file CSS
+  - `js/`: Chứa tất cả file JavaScript
+  - `images/`: Chứa tất cả hình ảnh
+
+## QUY TẮC ĐẶT TÊN
+
+### File và Thư mục
+- Tên file HTML: Sử dụng dạng kebab-case (ví dụ: `index.html`, `search-results.html`)
+- Tên file CSS: Sử dụng dạng kebab-case (ví dụ: `style.css`, `search-results.css`)
+- Tên file JavaScript: Sử dụng dạng kebab-case (ví dụ: `main.js`, `search-results.js`)
+- Tên file hình ảnh: Sử dụng dạng kebab-case và có ý nghĩa mô tả (ví dụ: `logo.png`, `hero-bg.jpg`, `package-standard.jpg`)
+
+### HTML
+
+#### Class và ID
+- ID: Sử dụng dạng kebab-case (ví dụ: `gym-location`, `start-date`)
+- Class: Sử dụng dạng kebab-case (ví dụ: `search-form`, `package-card`)
+- Tên class phải có ý nghĩa và mô tả đúng mục đích sử dụng
+
+#### Cấu trúc
+- Sử dụng đúng semantic HTML (header, footer, section, nav, main, etc.)
+- Sử dụng comment để phân chia các phần chính của trang
+- Luôn có alt cho thẻ img
+- Sử dụng container cho mỗi section
+
+### CSS
+
+#### Biến CSS
+- Sử dụng biến CSS (custom properties) cho màu sắc, kích thước, hiệu ứng chung
+- Đặt tất cả biến CSS trong selector `:root`
+- Đặt tên biến với prefix `--` và sử dụng dạng kebab-case
+
+#### Cấu trúc CSS
+- Phân chia CSS thành các section rõ ràng bằng comment
+- Sắp xếp CSS theo thứ tự: reset/base, layout, components, utilities, responsive
+- Mỗi file CSS riêng cho mỗi trang hoặc chức năng cụ thể
+- Style chung dùng chung trong file `style.css`
+
+#### Responsive
+- Sử dụng mobile-first approach
+- Breakpoints: 
+  - 480px: Mobile
+  - 768px: Tablet
+  - 992px: Desktop nhỏ
+  - 1200px: Desktop lớn
+
+### JavaScript
+
+#### Đặt tên
+- Biến và hàm: Sử dụng camelCase (ví dụ: `showNotification`, `sortSelect`)
+- Class: Sử dụng PascalCase
+- Hằng số: Sử dụng UPPER_SNAKE_CASE
+
+#### Cấu trúc
+- Bọc code trong event listener `DOMContentLoaded`
+- Tách logic thành các hàm riêng biệt
+- Comment cho các khối code phức tạp
+- Mỗi trang có file JavaScript riêng
+- Xử lý lỗi đầy đủ
+
+## PHONG CÁCH CODE
+
+### HTML
+- Sử dụng đúng indentation (2 khoảng trắng)
+- Đóng tất cả các thẻ, kể cả thẻ tự đóng
+- Sử dụng double quotes cho attributes
+
+### CSS
+- Mỗi thuộc tính trên một dòng
+- Sử dụng khoảng trắng sau dấu hai chấm
+- Sử dụng đơn vị tương đối (rem, em, %, vh, vw) khi có thể
+- Sử dụng Flexbox và Grid cho layout
+
+### JavaScript
+- Sử dụng ES6+ features khi có thể
+- Kiểm tra tồn tại element trước khi tương tác
+- Sử dụng arrow functions cho các callback ngắn
+- Sử dụng template literals thay vì nối chuỗi
+
+## MÀU SẮC VÀ FONT CHỮ
+
+### Màu sắc chính
+- Xanh dương chính: `#0071c2` (primary-color)
+- Xanh dương đậm: `#005999` (primary-dark)
+- Xanh dương nhạt: `#e6f2ff` (primary-light)
+- Màu accent: `#ff8c00` (accent-color)
+- Booking blue: `#003580` (booking-primary)
+- Booking yellow: `#f5a623` (booking-accent)
+
+### Font chữ
+- Font family: Roboto
+- Font weights: 300, 400, 500, 700
+- Font size cơ bản: 16px
+
+## RESPONSIVE
+
+### Nguyên tắc
+- Sử dụng các media query để điều chỉnh layout
+- Ưu tiên Flexbox và Grid cho layout responsive
+- Đảm bảo tất cả nút có kích thước tối thiểu 44x44px trên mobile
+- Đảm bảo text dễ đọc trên tất cả các thiết bị
+
+### Chiến lược
+- Desktop: Hiển thị đầy đủ
+- Tablet: Collapse sidebar, chuyển các items thành grid ít cột hơn
+- Mobile: Stack các items, ẩn một số thông tin phụ, hiển thị menu hamburger
+
+## SỬ DỤNG ICONS VÀ HÌNH ẢNH
+
+### Icons
+- Sử dụng Font Awesome cho icons
+- Đảm bảo tất cả icons đều có ý nghĩa và có thể truy cập được
+- Đối với icons có chức năng, sử dụng ARIA attributes khi cần thiết
+
+### Hình ảnh
+- Sử dụng hình ảnh có kích thước phù hợp
+- Đảm bảo tất cả hình ảnh đều có alt text
+- Sử dụng object-fit để giữ tỷ lệ khung hình
+- Tối ưu hình ảnh để giảm kích thước file
+
+## TÍCH HỢP VÀ TRIỂN KHAI
+
+### Quy trình
+- Kiểm tra cross-browser compatibility
+- Đảm bảo tất cả các form đều có validation
+- Tối ưu performance
+- Tuân thủ web accessibility guidelines
+
+### Tiếng Việt
+- Tất cả nội dung hiển thị phải bằng tiếng Việt
+- Sử dụng encoding UTF-8
+- Hỗ trợ đa ngôn ngữ trong tương lai 
