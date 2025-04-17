@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - MyGym</title>
+    <!-- CSS Bootstrap -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <!-- CSS tùy biến -->
+    <link href="~/Content/custom-style.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="top-nav">
+            <div class="main-nav">
+                <a href="@Url.Action("Index", "Home")" class="nav-item">Trang chủ</a>
+                <a href="@Url.Action("GymLocations", "Home")" class="nav-item">Địa điểm phòng gym</a>
+                <a href="@Url.Action("Schedule", "Home")" class="nav-item">Lịch tập</a>
+                <a href="@Url.Action("Packages", "Home")" class="nav-item">Gói tập</a>
+                <div class="dropdown">
+                    <a href="#" class="nav-item">Huấn luyện viên</a>
+                    <div class="dropdown-content">
+                        <a href="#">Chuyên nghiệp</a>
+                        <a href="#">Có chứng chỉ</a>
+                        <a href="#">Cá nhân</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="language-btn">Ngôn ngữ</button>
+                    <div class="dropdown-content">
+                        <a href="#">Tiếng Việt</a>
+                        <a href="#">English</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="user-nav">
+            <div class="user-nav-item">
+                <a href="#">Liên hệ</a>
+                <p>Khám phá các gói tập hấp dẫn nhất</p>
+            </div>
+            <div class="user-nav-item">
+                <a href="#">Đăng ký</a>
+                <p>Trải nghiệm thành viên ngay hôm nay</p>
+            </div>
+            <div class="user-nav-item">
+                <a href="#">Đăng nhập</a>
+                <p>Quản lý tài khoản của bạn</p>
+            </div>
+            <div class="user-nav-item">
+                <a href="#">Tìm kiếm</a>
+                <p>Tìm phòng tập gần bạn</p>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- MAIN CONTENT:  -->
+    <main>
+        @RenderBody()
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Fitness Search</h3>
+                <p>Tìm kiếm phòng tập phù hợp cho bạn</p>
+            </div>
+            <div class="footer-links">
+                <h4>Liên kết nhanh</h4>
+                <ul>
+                    <li><a href="@Url.Action("Index", "Home")">Trang chủ</a></li>
+                    <li><a href="#">Phòng tập</a></li>
+                    <li><a href="#">Huấn luyện viên</a></li>
+                    <li><a href="#">Gói tập</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Liên hệ</h4>
+                <p>Email: info@fitnesssearch.com</p>
+                <p>Điện thoại: 123-456-789</p>
+                <p>Địa chỉ: Đà Sơn 33</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Fitness Search. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="~/Scripts/popper.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
