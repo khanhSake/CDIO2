@@ -1,0 +1,59 @@
+﻿@model IEnumerable<GymWebsite.Models.Trainer> 
+@{
+    ViewBag.Title = "Huấn luyện viên";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="trainers">
+    <h2>Đội ngũ huấn luyện viên hàng đầu của chúng tôi</h2>
+    <div class="trainer-container">
+        @foreach (var trainer in Model)
+        {
+            <div class="trainer-box">
+                <img src="@Url.Content(trainer.ImageUrl)" alt="@trainer.Name" class="icon-large" />
+                <h3>@trainer.Name</h3>
+                <p>@trainer.ShortDescription</p>
+                <a href="#"
+                   class="btn btn-outline-primary btn-detail"
+                   data-bs-toggle="modal"
+                   data-bs-target="#trainerModal-@trainer.Id">
+                    <i class="bi bi-info-circle"></i> Xem chi tiết
+                </a>
+
+            </div>
+        }
+    </div>
+</section>
+@foreach (var trainer in Model)
+{
+    <div class="modal fade" id="trainerModal-@trainer.Id" tabindex="-1" aria-labelledby="trainerModalLabel-@trainer.Id" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="trainerModalLabel-@trainer.Id">@trainer.Name</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-profile">
+                        <img src="@Url.Content(trainer.ImageUrl)" alt="@trainer.Name" class="modal-img" />
+                        <div class="modal-info">
+                            <h4>@trainer.Title</h4>
+                            <p>@trainer.FullDescription</p>
+                            <h5>Chứng chỉ:</h5>
+                            <ul>
+                                @foreach (var cert in trainer.Certifications)
+                                {
+                                    <li>@cert</li>
+                                }
+                            </ul>
+                            <p><strong>Liên hệ:</strong> @trainer.Contact</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}

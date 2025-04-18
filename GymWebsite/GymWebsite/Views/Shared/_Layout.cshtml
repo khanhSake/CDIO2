@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - MyGym</title>
-    <!-- CSS Bootstrap -->
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
-    <!-- CSS tùy biến -->
     <link href="~/Content/custom-style.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
 </head>
 <body>
     <!-- HEADER -->
@@ -21,11 +22,12 @@
                 <div class="dropdown">
                     <a href="#" class="nav-item">Huấn luyện viên</a>
                     <div class="dropdown-content">
-                        <a href="#">Chuyên nghiệp</a>
-                        <a href="#">Có chứng chỉ</a>
-                        <a href="#">Cá nhân</a>
+                        <a href="@Url.Action("ProfessionalTrainers","Home")">Chuyên nghiệp</a>
+                        <a href="@Url.Action("CertifiedTrainers","Home")">Có chứng chỉ</a>
+                        <a href="@Url.Action("PersonalTrainers","Home")">Cá nhân</a>
                     </div>
                 </div>
+
                 <div class="dropdown">
                     <button class="language-btn">Ngôn ngữ</button>
                     <div class="dropdown-content">
