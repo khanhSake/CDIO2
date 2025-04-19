@@ -510,5 +510,93 @@ footer {
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
+    .gym-detail-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Header Actions */
+    .detail-header-actions .detail-title {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .detail-header-actions .actions a,
+    .detail-header-actions .actions .btn {
+        color: #333;
+    }
+
+    /* Gallery */
+    .gallery-section .main-image {
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .gallery-section .thumbs .thumb {
+        flex: 1;
+        height: 80px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .gallery-section .thumbs .thumb.more {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0,0,0,0.5);
+            color: white;
+            font-weight: bold;
+        }
+
+    /* Sidebar */
+    .sidebar-section .rating-box,
+    .sidebar-section .map-box,
+    .highlights-section .card {
+        background: #f7f9fc;
+        border-radius: 8px;
+        padding: 15px;
+    }
+
+        .sidebar-section .rating-box h5,
+        .sidebar-section .map-box h5,
+        .highlights-section h5 {
+            margin-bottom: 10px;
+        }
+
+    /* Intro description */
+    .intro-section .description {
+        max-height: 80px;
+        overflow: hidden;
+    }
+
+        .intro-section .description.expanded {
+            max-height: none;
+        }
+
+    /* Reviews */
+    .reviews-section .criteria .crit-item p:first-child {
+        font-weight: 500;
+    }
+
+    .reviews-section .comment {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb-container .breadcrumb {
+        background: none;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .breadcrumb-item + .breadcrumb-item::before {
+        content: ">";
+        margin: 0 5px;
+    }
+
 
 }

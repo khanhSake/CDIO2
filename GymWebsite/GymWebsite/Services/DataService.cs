@@ -1,61 +1,43 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Linq;
 using GymWebsite.Models;
 
 namespace GymWebsite.Services
 {
-    public class DataService
+    public static class DataService
     {
-        private static List<Gym> gyms = new List<Gym>
+        public static List<Gym> GetAllGyms()
         {
-            new Gym
+            return new List<Gym>
             {
-                Id = "1",
-                TenPhongTap = "Fitness Pro Đà Nẵng",
-                DiaChi = "123 Lê Duẩn, Đà Nẵng",
-                SoDienThoai = "0123 456 789",
-                Email = "contact@fitnesspro.vn",
-                GioMoCua = "06:00",
-                GioDongCua = "22:00",
-                ImageUrl = "/images/gym1.jpg",
-                TienIch = new List<string> { "Máy chạy bộ", "Phòng xông hơi", "Huấn luyện viên riêng", "Wifi miễn phí" }
-            },
-            new Gym
-            {
-                Id = "2",
-                TenPhongTap = "Gym Center HCM",
-                DiaChi = "456 Nguyễn Trãi, TP.HCM",
-                SoDienThoai = "0987 654 321",
-                Email = "info@gymcenter.vn",
-                GioMoCua = "05:00",
-                GioDongCua = "23:00",
-                ImageUrl = "/images/gym2.jpg",
-                TienIch = new List<string> { "Bể bơi", "Yoga", "Khu vực CrossFit" }
-            }
-        };
-        public List<Gym> GetAllGyms()
-        {
-            return gyms;
+                new Gym {
+                    Id = "1",
+                    TenPhongTap = "Fitness Center A",
+                    DiaChi = "Hà Nội",
+                    ImageUrl = "/Content/images/gym1.jpg",
+                    SoDienThoai = "0123-456-789",
+                    Email = "a@gym.vn",
+                    GioMoCua = "06:00",
+                    GioDongCua = "22:00",
+                    TienIch = new List<string> {"Máy chạy bộ", "Huấn luyện viên", "Phòng xông hơi"}
+                },
+                new Gym {
+                    Id = "2",
+                    TenPhongTap = "Gym Pro B",
+                    DiaChi = "TP. Hồ Chí Minh",
+                    ImageUrl = "/Content/images/gym2.jpg",
+                    SoDienThoai = "0987-654-321",
+                    Email = "b@gym.vn",
+                    GioMoCua = "05:30",
+                    GioDongCua = "21:30",
+                    TienIch = new List<string> {"Yoga", "Bơi lội", "Huấn luyện cá nhân"}
+                }
+            };
         }
-        public Gym GetGymById(string id)
+
+        public static Gym GetGymById(string id)
         {
-            return gyms.Find(g => g.Id == id);
-        }
-        public void AddGym(Gym gym)
-        {
-            gyms.Add(gym);
-        }
-        public void UpdateGym(Gym updatedGym)
-        {
-            var index = gyms.FindIndex(g => g.Id == updatedGym.Id);
-            if (index != -1)
-            {
-                gyms[index] = updatedGym;
-            }
-        }
-        public void DeleteGym(string id)
-        {
-            gyms.RemoveAll(g => g.Id == id);
+            return GetAllGyms().FirstOrDefault(g => g.Id == id);
         }
     }
 }

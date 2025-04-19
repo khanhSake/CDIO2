@@ -6,15 +6,15 @@ namespace GymWebsite.Controllers
 {
     public class GymController : Controller
     {
-        private readonly DataService _dataService = new DataService(); 
         public ActionResult Index()
         {
-            var gyms = _dataService.GetAllGyms();
+            var gyms = DataService.GetAllGyms();
             return View(gyms);
         }
+
         public ActionResult Detail(string id)
         {
-            var gym = _dataService.GetGymById(id);
+            var gym = DataService.GetGymById(id);
             if (gym == null)
                 return HttpNotFound();
             return View(gym);

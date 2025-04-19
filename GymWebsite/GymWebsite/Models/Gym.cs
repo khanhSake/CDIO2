@@ -7,6 +7,7 @@ namespace GymWebsite.Models
 {
     public class Gym  
     {
+        public string MoTaChiTiet { get; set; }
         public string Id { get; set; }
         public string TenPhongTap { get; set; }
         public string DiaChi { get; set; }

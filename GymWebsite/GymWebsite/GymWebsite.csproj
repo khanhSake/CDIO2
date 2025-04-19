@@ -185,7 +185,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Gym\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\.DS_Store" />
@@ -213,7 +212,9 @@
     <Content Include="Scripts\bootstrap.js.map" />
     <Content Include="Scripts\bootstrap.min.js.map" />
     <Content Include="Views\Home\Trainers.cshtml" />
-    <Content Include="Views\Home\GymDetails.cshtml" />
+    <Content Include="Views\Gym\Index.cshtml" />
+    <Content Include="Views\Gym\Detail.cshtml" />
+    <Content Include="Views\Shared\_GymCard.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
