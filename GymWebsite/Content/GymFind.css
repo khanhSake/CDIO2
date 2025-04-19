@@ -1,0 +1,65 @@
+﻿
+.border-blue {
+    border: 1.5px solid #e7f0ff !important;
+    border-radius: 15px;
+}
+
+.booking-card-hover {
+    transition: box-shadow .15s, border-color .15s, transform .1s;
+}
+
+    .booking-card-hover:hover {
+        box-shadow: 0 8px 32px #00358030 !important;
+        border-color: #74b5ff !important;
+        transform: translateY(-2px) scale(1.01);
+        z-index: 2;
+    }
+
+.card .badge.bg-primary {
+    background: #003580 !important;
+    font-weight: 600;
+}
+
+.card .badge.bg-warning {
+    background: #ffc700 !important;
+    color: #222 !important;
+}
+
+.card .badge.bg-info {
+    background: #a2e5ff !important;
+    color: #003580 !important;
+}
+
+.breadcrumb .breadcrumb-item a {
+    color: #003580;
+    text-decoration: underline;
+}
+
+.main-title {
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+    .container-xl {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-title {
+        font-size: 1.25rem;
+    }
+
+    .card h4.fs-5 {
+        font-size: 1rem;
+    }
+
+    .breadcrumb {
+        font-size: .95rem;
+    }
+
+    .shadow-sm {
+        box-shadow: 0 1.5px 8px #00358014 !important;
+    }
+}

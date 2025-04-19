@@ -1,0 +1,104 @@
+﻿@{
+    ViewBag.Title = "Trang chủ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Khám phá phòng tập gym phù hợp với bạn ngay hôm nay!</h1>
+        <p>Đặt lịch tập ngay hôm nay để bắt đầu hành trình sức khỏe của bạn!</p>
+    </div>
+</section>
+
+<section class="search-section">
+    <h2>Tìm phòng tập</h2>
+    <p>Bắt đầu hành trình tìm kiếm phòng tập gym lý tưởng cho bạn ngay hôm nay!</p>
+    <div class="search-box">
+        <input type="text" placeholder="Nhập yêu cầu của bạn" class="search-input" />
+        <button class="search-btn" onclick="location.href='@Url.Action("GymFind", "Gym")'">Tìm</button>
+    </div>
+</section>
+
+<section class="features">
+    <h2>Tìm kiếm phòng tập gym phù hợp với nhu cầu của bạn ngay hôm nay!</h2>
+    <p>Chúng tôi giúp bạn dễ dàng tìm kiếm phòng tập gym theo khu vực. Chỉ cần nhập địa điểm, chọn ngày và số lượng người tham gia để bắt đầu.</p>
+    <div class="feature-grid">
+        <div class="feature-box">
+            <img src="@Url.Content("~/Content/images/box.png")" alt="icon" class="icon-large" />
+            <h3>Tìm kiếm ngay</h3>
+            <p>Chọn ngày và số lượng người tham gia để tìm kiếm.</p>
+        </div>
+        <div class="feature-box">
+            <img src="@Url.Content("~/Content/images/box.png")" alt="icon" class="icon-large" />
+            <h3>Đặt lịch</h3>
+            <p>Nhanh chóng, trực tuyến và dễ dàng tìm phòng tập gần bạn.</p>
+        </div>
+    </div>
+</section>
+
+<section class="popular-gyms">
+    <h2>Khám Phá Những Phòng Tập Nổi Bật</h2>
+    <p>Chúng tôi cung cấp danh sách các phòng tập gym hàng đầu, đáp ứng nhu cầu tập luyện của bạn. Hãy khám phá không gian tập luyện tuyệt vời ngay hôm nay!</p>
+    <div class="gym-container">
+        <div class="gym-card">
+            <div class="gym-image" style="background-image: url('@Url.Content("~/Content/images/a1.jpg")');"></div>
+            <h3>Phòng tập nổi bật số 1</h3>
+            <p>Tìm kiếm phòng tập lý tưởng với cơ sở hiện đại.</p>
+            <a href="#" class="link-more">Khám Phá</a>
+        </div>
+        <div class="gym-card">
+            <div class="gym-image" style="background-image: url('@Url.Content("~/Content/images/a2.jpg")');"></div>
+            <h3>Phòng tập nổi bật số 2</h3>
+            <p>Phòng tập phù hợp với mọi nhu cầu và sở thích.</p>
+            <a href="#" class="link-more">Xem thêm</a>
+        </div>
+        <div class="gym-card">
+            <div class="gym-image gym-image-real" style="background-image: url('@Url.Content("~/Content/images/a3.jpg")');"></div>
+            <h3>Đặt lịch tập ngay hôm nay</h3>
+            <p>Trải nghiệm sự khác biệt tại các phòng tập hàng đầu.</p>
+            <a href="#" class="link-more">Đặt Ngay</a>
+        </div>
+    </div>
+</section>
+
+<section class="special-offers">
+    <div class="special-content">
+        <h2>Khám phá các gói tập đặc biệt và ưu đãi hấp dẫn ngay hôm nay!</h2>
+        <p>Chúng tôi cung cấp các gói tập tốt nhất cùng mức giá ưu đãi. Đừng bỏ lỡ cơ hội trải nghiệm dịch vụ chất lượng.</p>
+        <div class="offers-container">
+            <div class="offer-box">
+                <h3>Ưu đãi đặc biệt</h3>
+                <p>Giảm giá 30% cho gói tập 3 tháng. Đăng ký ngay!</p>
+            </div>
+            <div class="offer-box">
+                <h3>Gói tập</h3>
+                <p>Khám phá các gói tập đa dạng phù hợp với nhu cầu của bạn.</p>
+            </div>
+        </div>
+    </div>
+    <div class="special-image" style="background-image: url('@Url.Content("~/Content/images/special-offer.jpg")');"></div>
+</section>
+
+<section class="trainers">
+    <h2>Khám phá đội ngũ huấn luyện viên hàng đầu của chúng tôi</h2>
+    <div class="trainer-container">
+        <div class="trainer-box">
+            <img src="@Url.Content("~/Content/images/box.png")" alt="icon" class="icon-large" />
+            <h3>Huấn luyện viên chuyên nghiệp</h3>
+            <p>Giúp bạn đạt được mục tiêu tập luyện với kinh nghiệm và sự tận tâm.</p>
+            <a href="#" class="link-more">Tìm hiểu</a>
+        </div>
+        <div class="trainer-box">
+            <img src="@Url.Content("~/Content/images/box.png")" alt="icon" class="icon-large" />
+            <h3>Huấn luyện viên có chứng chỉ</h3>
+            <p>Đội ngũ giàu kinh nghiệm và được đào tạo bài bản.</p>
+            <a href="#" class="link-more">Xem thêm</a>
+        </div>
+        <div class="trainer-box">
+            <img src="@Url.Content("~/Content/images/box.png")" alt="icon" class="icon-large" />
+            <h3>Huấn luyện viên cá nhân</h3>
+            <p>Hỗ trợ tối ưu hoá quá trình tập luyện của bạn.</p>
+            <a href="#" class="link-more">Đăng ký</a>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết phòng gym</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="GymFind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body style="background:#f5f5f5;">
+    <!-- ===== MAIN BOOKING UI ===== -->
+    <main class="container-xl mt-4 mb-5">
+        <!-- Breadcrumb & Title -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-transparent p-0 mb-2 small">
+                <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                <li class="breadcrumb-item"><a href="#">Đà Nẵng</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Kết quả tìm kiếm</li>
+            </ol>
+        </nav>
+        <div class="d-lg-flex align-items-end justify-content-between mb-3">
+            <div>
+                <h1 class="fs-4 fw-bold">Đã Nẵng: tìm thấy <span class="text-primary fw-bold"></span> Phòng Tập</h1>
+            </div>
+            <div class="d-flex gap-2 align-items-center mt-2 mt-lg-0">
+                <div class="dropdown">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">Sắp xếp theo: <b>Lựa chọn hàng đầu của chúng tôi</b></button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Giá (thấp - cao)</a></li>
+                        <li><a class="dropdown-item" href="#">Giá (cao - thấp)</a></li>
+                        <li><a class="dropdown-item" href="#">Khoảng cách tới trung tâm</a></li>
+                        <li><a class="dropdown-item" href="#">Điểm đánh giá</a></li>
+                    </ul>
+                </div>
+                <button class="btn btn-outline-primary fw-semibold">Xem ngang</button>
+                <button class="btn btn-outline-secondary fw-semibold">Xem dọc</button>
+            </div>
+        </div>
+        <!-- Grid wrapper -->
+        <div class="row gy-4">
+            <!-- SIDEBAR FILTER (cột trái) -->
+            <aside class="col-lg-4 col-xl-3">
+                <div class="card mb-3 shadow-sm">
+                    <div class="card-body p-3">
+                        <!-- MAP + BUTTON -->
+                        <div class="mb-3">
+                            <div class="ratio ratio-16x9 rounded-lg overflow-hidden mb-2">
+                                <iframe frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.655779463873!2d139.9736420755276!3d35.86701372013612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018879ac568a2f3%3A0x1206b53ff91e412d!2zS2FzaGl3YSwgS2FzaGl3YXNoaSwgQ2hpYmEsIE5o4bqtbiBC4buZaSBUcuG7jW5n!5e0!3m2!1sen!2sjp!4v1684747593225!5m2!1sen!2sjp" style="width:100%;height:140px;border:0;"></iframe>
+                            </div>
+                            <button class="btn btn-primary btn-sm w-100"><i class="bi bi-geo-alt me-1"></i> Hiển thị trên bản đồ</button>
+                        </div>
+                        <!-- FILTER demo -->
+                        <hr>
+                        <div class="mb-2">
+                            <b>Ngân sách của bạn </b>
+                            <div class="form-range mt-2 mb-1" style="height:24px;">
+                                <input type="range" class="form-range" value="30" min="30" max="500">
+                            </div>
+                            <small>US$30 – US$500+</small>
+                        </div>
+                        <div class="mb-2">
+                            <b>Các bộ lọc phổ biến</b>
+                            <div class="form-check mt-1">
+                                <input class="form-check-input" type="checkbox" id="filterFreeCancel">
+                                <label class="form-check-label" for="filterFreeCancel">Miễn phí huỷ</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="filterPayLater">
+                                <label class="form-check-label" for="filterPayLater">Không cần thanh toán trước</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="filterNear">
+                                <label class="form-check-label" for="filterNear">Dưới 1 km từ trung tâm</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <!-- DANH SÁCH CARD HOTEL (cột phải) -->
+            <div class="col-lg-8 col-xl-9">
+                <div class="d-flex flex-column gap-4">
+                    <!-- CARD 1 -->
+                    <div class="card shadow-sm border-blue p-2 position-relative booking-card-hover">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <div class="position-relative h-100">
+                                    <img src="@Url.Content("~/Content/images/DaNangKing.jpg")" class="img-fluid rounded-3 h-100 object-fit-cover" alt="Hotel 1" style="min-height:160px;">
+                                    <span class="badge bg-success position-absolute top-0 start-0 m-2 px-2">Wifi miễn phí</span>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body py-2 ps-md-4 ps-2">
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <h4 class="card-title fs-5 mb-0 text-primary">KingSport Fitness Đà Nẵng</h4>
+                                        <span class="badge bg-primary fs-6">8,7</span>
+                                    </div>
+                                    <div class="d-flex gap-2 mb-1">
+                                        <span class="text-success small"><i class="bi bi-check-circle"></i> Miễn phí huỷ</span>
+                                        <span class="badge rounded-pill bg-warning text-dark">Rất tốt</span>
+                                    </div>
+                                    <p class="mb-1 text-muted small">Cách trung tâm 4,9km</p>
+                                    <div class="mb-1 fw-bold text-success">US$8.5</div>
+                                    <div class="d-flex justify-content-end align-items-end h-100">
+                                        <a href="@Url.Action("GymDetail", "Gym")" class="btn btn-primary rounded-3 fw-bold mt-2">Xem chỗ trống</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 2 -->
+                    <div class="card shadow-sm border-blue p-2 position-relative booking-card-hover">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <div class="position-relative h-100">
+                                    <img src="@Url.Content("~/Content/images/GalaxyFiness.jpg")" class="img-fluid rounded-3 h-100 object-fit-cover" alt="Hotel 2" style="min-height:160px;">
+                                    <span class="badge bg-success position-absolute top-0 start-0 m-2 px-2">Wifi miễn phí</span>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body py-2 ps-md-4 ps-2">
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <h4 class="card-title fs-5 mb-0 text-primary">Galaxy Fitness & Yoga Center.</h4>
+                                        <span class="badge bg-primary fs-6">7,5</span>
+                                    </div>
+                                    <div class="d-flex gap-2 mb-1">
+                                        <span class="text-success small"><i class="bi bi-check-circle"></i> Không cần thanh toán trước</span>
+                                        <span class="badge rounded-pill bg-info text-dark">Tốt</span>
+                                    </div>
+                                    <p class="mb-1 text-muted small">Cách trung tâm 1,3km</p>
+                                    <div class="mb-1 fw-bold text-success">US$9</div>
+                                    <div class="d-flex justify-content-end align-items-end h-100">
+                                        <a href="#" class="btn btn-primary rounded-3 fw-bold mt-2">Xem chỗ trống</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 3 -->
+                    <div class="card shadow-sm border-blue p-2 position-relative booking-card-hover">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <div class="position-relative h-100">
+                                    <img src="@Url.Content("~/Content/images/VPT.jpg")" class="img-fluid rounded-3 h-100 object-fit-cover" alt="Hotel 3" style="min-height:160px;">
+                                    <span class="badge bg-success position-absolute top-0 start-0 m-2 px-2">Wifi miễn phí</span>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body py-2 ps-md-4 ps-2">
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <h4 class="card-title fs-5 mb-0 text-primary">VPT Fitness 2</h4>
+                                        <span class="badge bg-primary fs-6">8,2</span>
+                                    </div>
+                                    <div class="d-flex gap-2 mb-1">
+                                        <span class="text-success small"><i class="bi bi-door-closed"></i> Không hút thuốc</span>
+                                        <span class="badge rounded-pill bg-warning text-dark">Rất tốt</span>
+                                    </div>
+                                    <p class="mb-1 text-muted small">Cách trung tâm 3,5km</p>
+                                    <div class="mb-1 fw-bold text-success">US$10</div>
+                                    <div class="d-flex justify-content-end align-items-end h-100">
+                                        <a href="#" class="btn btn-primary rounded-3 fw-bold mt-2">Xem chỗ trống</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- END MAIN -->
+</body>
+</html>

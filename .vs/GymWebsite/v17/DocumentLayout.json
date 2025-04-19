@@ -1,0 +1,79 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Computer Sicence\\CDIO2-main\\CDIO2-main\\GymWebsite\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3A251359-B737-4EAD-8D89-CF8AAA02857F}|GymWebsite\\GymWebsite.csproj|e:\\computer sicence\\cdio2-main\\cdio2-main\\gymwebsite\\gymwebsite\\views\\gym\\gymdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A251359-B737-4EAD-8D89-CF8AAA02857F}|GymWebsite\\GymWebsite.csproj|solutionrelative:gymwebsite\\views\\gym\\gymdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A251359-B737-4EAD-8D89-CF8AAA02857F}|GymWebsite\\GymWebsite.csproj|e:\\computer sicence\\cdio2-main\\cdio2-main\\gymwebsite\\gymwebsite\\views\\gym\\gymfind.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A251359-B737-4EAD-8D89-CF8AAA02857F}|GymWebsite\\GymWebsite.csproj|solutionrelative:gymwebsite\\views\\gym\\gymfind.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A251359-B737-4EAD-8D89-CF8AAA02857F}|GymWebsite\\GymWebsite.csproj|e:\\computer sicence\\cdio2-main\\cdio2-main\\gymwebsite\\gymwebsite\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A251359-B737-4EAD-8D89-CF8AAA02857F}|GymWebsite\\GymWebsite.csproj|solutionrelative:gymwebsite\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GymDetail.cshtml",
+              "DocumentMoniker": "E:\\Computer Sicence\\CDIO2-main\\CDIO2-main\\GymWebsite\\GymWebsite\\Views\\Gym\\GymDetail.cshtml",
+              "RelativeDocumentMoniker": "GymWebsite\\Views\\Gym\\GymDetail.cshtml",
+              "ToolTip": "E:\\Computer Sicence\\CDIO2-main\\CDIO2-main\\GymWebsite\\GymWebsite\\Views\\Gym\\GymDetail.cshtml",
+              "RelativeToolTip": "GymWebsite\\Views\\Gym\\GymDetail.cshtml",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAAAD0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-19T13:00:32.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GymFind.cshtml",
+              "DocumentMoniker": "E:\\Computer Sicence\\CDIO2-main\\CDIO2-main\\GymWebsite\\GymWebsite\\Views\\Gym\\GymFind.cshtml",
+              "RelativeDocumentMoniker": "GymWebsite\\Views\\Gym\\GymFind.cshtml",
+              "ToolTip": "E:\\Computer Sicence\\CDIO2-main\\CDIO2-main\\GymWebsite\\GymWebsite\\Views\\Gym\\GymFind.cshtml",
+              "RelativeToolTip": "GymWebsite\\Views\\Gym\\GymFind.cshtml",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAAAJMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-19T12:54:48.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Computer Sicence\\CDIO2-main\\CDIO2-main\\GymWebsite\\GymWebsite\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "GymWebsite\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\Computer Sicence\\CDIO2-main\\CDIO2-main\\GymWebsite\\GymWebsite\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "GymWebsite\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-19T12:54:25.049Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
