@@ -167,6 +167,7 @@
     <Content Include="Content\images\trainer6.jpg" />
     <Content Include="Content\images\trainer7.jpg" />
     <Content Include="Content\images\VPT.jpg" />
+    <Content Include="Content\Trainer.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\.DS_Store" />
