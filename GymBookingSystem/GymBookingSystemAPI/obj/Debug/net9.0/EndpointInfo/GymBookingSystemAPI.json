@@ -1,0 +1,362 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "GymBookingSystemAPI",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/GymBranches": {
+      "get": {
+        "tags": [
+          "GymBranches"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GymBranchDetailDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GymBranchDetailDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GymBranchDetailDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/GymBranches/{id}": {
+      "get": {
+        "tags": [
+          "GymBranches"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GymBranchDetailDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GymBranchDetailDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GymBranchDetailDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "BranchImageDTO": {
+        "type": "object",
+        "properties": {
+          "imageID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "imageURL": {
+            "type": "string",
+            "nullable": true
+          },
+          "caption": {
+            "type": "string",
+            "nullable": true
+          },
+          "isMainImage": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FacilityDTO": {
+        "type": "object",
+        "properties": {
+          "facilityID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "facilityName": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "iconClass": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GymBranchDetailDTO": {
+        "type": "object",
+        "properties": {
+          "branchID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "branchName": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "district": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "openingHours": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "mapLocation": {
+            "type": "string",
+            "nullable": true
+          },
+          "latitude": {
+            "type": "number",
+            "format": "double"
+          },
+          "longitude": {
+            "type": "number",
+            "format": "double"
+          },
+          "ratingAverage": {
+            "type": "number",
+            "format": "double"
+          },
+          "reviewCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "facilities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FacilityDTO"
+            },
+            "nullable": true
+          },
+          "branchImages": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BranchImageDTO"
+            },
+            "nullable": true
+          },
+          "membershipPackages": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MembershipPackageDTO"
+            },
+            "nullable": true
+          },
+          "reviews": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ReviewDTO"
+            },
+            "nullable": true
+          },
+          "featured": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MembershipPackageDTO": {
+        "type": "object",
+        "properties": {
+          "packageID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "packageName": {
+            "type": "string",
+            "nullable": true
+          },
+          "duration": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "durationType": {
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "discountedPrice": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "features": {
+            "type": "string",
+            "nullable": true
+          },
+          "isPopular": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ReviewDTO": {
+        "type": "object",
+        "properties": {
+          "reviewID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "rating": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "comment": {
+            "type": "string",
+            "nullable": true
+          },
+          "userFullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "reviewDate": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

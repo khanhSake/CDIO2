@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách phòng tập gym</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Liên kết đến file Styles.css -->
+    <link rel="stylesheet" href="css/Styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header py-3 shadow-sm fixed-top">
+        <div class="container">
+            <div class="booking-header">
+                <div class="booking-logo">
+                    <a href="index.html" class="logo-link">
+                        <img src="images/power_fitness_logo.jpg" alt="Power Fitness Logo" class="navbar-logo">
+                        <span class="logo-text">PowerFitness.com</span>
+                    </a>
+                </div>
+                <div class="booking-options">
+                    <div class="currency-option">
+                        <span>VND</span>
+                        <i class="fas fa-star text-warning ms-1"></i>
+                    </div>
+                    <div class="language-dropdown">
+                        <i class="fas fa-globe"></i>
+                        <span>Tiếng Việt</span>
+                        <i class="fas fa-chevron-down ms-1"></i>
+                    </div>
+                    <div class="auth-buttons">
+                        <a href="#" class="btn btn-outline-light me-2">Đăng ký</a>
+                        <a href="#" class="btn btn-outline-light">Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+            <nav class="booking-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <i class="fas fa-home"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="gyms-list.html" class="nav-link">
+                            <i class="fas fa-dumbbell"></i>
+                            <span>Phòng tập</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-user"></i>
+                            <span>Huấn luyện viên</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-box"></i>
+                            <span>Gói tập + Huấn luyện viên</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Địa điểm</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-tag"></i>
+                            <span>Ưu đãi</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="gyms-list py-5">
+        <div class="container">
+            <h1 class="fw-bold text-center mb-4">Danh sách phòng tập gym</h1>
+            <p class="text-center mb-5 lead">Tìm kiếm phòng tập phù hợp với bạn tại các tỉnh thành trên cả nước.</p>
+            <div class="row" id="gyms-container">
+                <!-- Danh sách phòng gym sẽ được thêm bằng JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row footer-container">
+                <div class="col-md-4 footer-column mb-4">
+                    <a href="index.html" class="d-block mb-4">
+                        <img src="images/power_fitness_logo.jpg" alt="Power Fitness Logo" class="footer-logo">
+                    </a>
+                    <p>Tìm kiếm phòng tập phù hợp cho bạn</p>
+                </div>
+                <div class="col-md-4 footer-column mb-4">
+                    <h3 class="fw-semibold mb-4">Liên kết nhanh</h3>
+                    <a href="index.html" class="d-block mb-2"><i class="fas fa-home me-2"></i> Trang chủ</a>
+                    <a href="gyms-list.html" class="d-block mb-2"><i class="fas fa-dumbbell me-2"></i> Phòng tập</a>
+                    <a href="#" class="d-block mb-2"><i class="fas fa-user me-2"></i> Huấn luyện viên</a>
+                    <a href="#" class="d-block mb-2"><i class="fas fa-box me-2"></i> Gói tập</a>
+                    <a href="#" class="d-block mb-2"><i class="fas fa-envelope me-2"></i> Liên hệ</a>
+                </div>
+                <div class="col-md-4 footer-column mb-4">
+                    <h3 class="fw-semibold mb-4">Liên hệ</h3>
+                    <p class="mb-2">Email: dolanh0000@gmail.com</p>
+                    <p class="mb-2">Điện thoại: 0936212369</p>
+                    <p class="mb-2">Địa chỉ: Nguyễn Văn Linh</p>
+                </div>
+            </div>
+            <div class="footer-bottom text-center pt-4">
+                <p>© 2025 Power Fitness. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="btn btn-primary back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        // Gọi API để lấy danh sách phòng gym
+        async function fetchGymsList() {
+            try {
+                const response = await fetch('http://localhost:5197/api/GymBranches');
+                if (!response.ok) {
+                    throw new Error(`Không thể lấy danh sách phòng gym: ${response.status} ${response.statusText}`);
+                }
+                const data = await response.json();
+
+                const gymsContainer = document.getElementById('gyms-container');
+                data.forEach(gym => {
+                    const gymElement = document.createElement('div');
+                    gymElement.className = 'col-md-4 mb-4';
+                    gymElement.innerHTML = `
+                        <div class="card gym-card h-100 shadow-sm">
+                            <div class="gym-card-image">
+                                <img src="${gym.branchImages.find(img => img.isMainImage)?.imageURL || 'images/placeholder.jpg'}" class="card-img-top" alt="${gym.branchName}">
+                            </div>
+                            <div class="card-body gym-card-content">
+                                <h3 class="card-title fw-semibold">${gym.branchName}</h3>
+                                <p class="card-text">${gym.address}, ${gym.district}, ${gym.city}</p>
+                                <p class="card-text"><i class="fas fa-star text-warning me-1"></i> ${gym.ratingAverage.toFixed(1)} (${gym.reviewCount} đánh giá)</p>
+                                <a href="gym-detail.html?id=${gym.branchID}" class="gym-card-link fw-medium">Xem chi tiết <i class="fas fa-chevron-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    `;
+                    gymsContainer.appendChild(gymElement);
+                });
+            } catch (error) {
+                console.error('Lỗi:', error.message);
+                alert(`Có lỗi xảy ra khi tải danh sách phòng gym: ${error.message}`);
+            }
+        }
+
+        // Gọi hàm lấy danh sách khi trang được tải
+        document.addEventListener('DOMContentLoaded', fetchGymsList);
+
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

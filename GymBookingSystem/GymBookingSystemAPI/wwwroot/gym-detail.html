@@ -1,0 +1,438 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết phòng tập gym</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Liên kết đến file Styles.css -->
+    <link rel="stylesheet" href="css/Styles.css">
+    <!-- Thêm Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSn2UB2o7B0lCv7BqIKf-YnTRSZ_PZMac&callback=initMap" async defer></script>
+    <style>
+        /* Cải thiện khoảng cách và hiệu ứng */
+        .gym-detail {
+            padding: 60px 0;
+        }
+
+        .main-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+            .main-image img:hover {
+                transform: scale(1.02);
+            }
+
+        .image-gallery img {
+            width: 120px;
+            height: 80px;
+            object-fit: cover;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+            .image-gallery img:hover {
+                opacity: 0.8;
+                transform: scale(1.05);
+            }
+
+        .branch-info-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 120px;
+        }
+
+        .btn-book-now {
+            background-color: var(--primary-color);
+            color: #fff;
+            font-weight: 600;
+            font-size: 18px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+            .btn-book-now:hover {
+                background-color: var(--primary-dark);
+                transform: scale(1.05);
+                color: #fff;
+            }
+
+        .facility-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+            .facility-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
+
+        .package-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+            .package-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
+
+        .review-card {
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        #map {
+            height: 500px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header py-3 shadow-sm fixed-top">
+        <div class="container">
+            <div class="booking-header">
+                <div class="booking-logo">
+                    <a href="index.html" class="logo-link">
+                        <img src="images/power_fitness_logo.jpg" alt="Power Fitness Logo" class="navbar-logo">
+                        <span class="logo-text">PowerFitness.com</span>
+                    </a>
+                </div>
+                <div class="booking-options">
+                    <div class="currency-option">
+                        <span>VND</span>
+                        <i class="fas fa-star text-warning ms-1"></i>
+                    </div>
+                    <div class="language-dropdown">
+                        <i class="fas fa-globe"></i>
+                        <span>Tiếng Việt</span>
+                        <i class="fas fa-chevron-down ms-1"></i>
+                    </div>
+                    <div class="auth-buttons">
+                        <a href="#" class="btn btn-outline-light me-2">Đăng ký</a>
+                        <a href="#" class="btn btn-outline-light">Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+            <nav class="booking-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <i class="fas fa-home"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-dumbbell"></i>
+                            <span>Phòng tập</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-user"></i>
+                            <span>Huấn luyện viên</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-box"></i>
+                            <span>Gói tập + Huấn luyện viên</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Địa điểm</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-tag"></i>
+                            <span>Ưu đãi</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="gym-detail">
+        <div class="container">
+            <h1 id="branch-name" class="fw-bold mb-4"></h1>
+            <div class="row">
+                <!-- Main Image and Gallery -->
+                <div class="col-md-8">
+                    <div class="main-image mb-4">
+                        <img id="main-image" class="img-fluid rounded shadow-sm" alt="Phòng tập">
+                    </div>
+                    <div class="image-gallery d-flex flex-wrap gap-2 mb-5">
+                        <!-- Thumbnails sẽ được thêm bằng JavaScript -->
+                    </div>
+                </div>
+                <!-- Branch Info -->
+                <div class="col-md-4">
+                    <div class="branch-info-card p-4">
+                        <h3 class="fw-semibold mb-3">Thông tin phòng tập</h3>
+                        <p><i class="fas fa-map-marker-alt me-2 text-primary"></i> <span id="address"></span></p>
+                        <p><i class="fas fa-phone me-2 text-primary"></i> <span id="phone"></span></p>
+                        <p><i class="fas fa-envelope me-2 text-primary"></i> <span id="email"></span></p>
+                        <p><i class="fas fa-clock me-2 text-primary"></i> <span id="opening-hours"></span></p>
+                        <p><i class="fas fa-star me-2 text-warning"></i> Đánh giá: <span id="rating"></span> (<span id="review-count"></span> đánh giá)</p>
+                        <a href="#" class="btn btn-book-now mt-3 w-100">Đặt lịch ngay</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Description -->
+            <div class="mt-5">
+                <h2 class="fw-bold mb-3">Mô tả</h2>
+                <p id="description" class="text-muted"></p>
+            </div>
+
+            <!-- Facilities -->
+            <div class="mt-5">
+                <h2 class="fw-bold mb-3">Tiện ích</h2>
+                <div id="facilities" class="d-flex flex-wrap gap-3">
+                    <!-- Tiện ích sẽ được thêm bằng JavaScript -->
+                </div>
+            </div>
+
+            <!-- Membership Packages -->
+            <div class="mt-5">
+                <h2 class="fw-bold mb-3">Gói thành viên</h2>
+                <div id="membership-packages" class="row">
+                    <!-- Gói thành viên sẽ được thêm bằng JavaScript -->
+                </div>
+            </div>
+
+            <!-- Reviews -->
+            <div class="mt-5">
+                <h2 class="fw-bold mb-3">Đánh giá</h2>
+                <div id="reviews">
+                    <!-- Đánh giá sẽ được thêm bằng JavaScript -->
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div class="mt-5">
+                <h2 class="fw-bold mb-3">Vị trí</h2>
+                <a id="map-location" href="#" target="_blank" class="btn btn-outline-primary mb-3">Xem trên Google Maps</a>
+                <div id="map"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row footer-container">
+                <div class="col-md-4 footer-column mb-4">
+                    <a href="index.html" class="d-block mb-4">
+                        <img src="images/power_fitness_logo.jpg" alt="Power Fitness Logo" class="footer-logo">
+                    </a>
+                    <p>Tìm kiếm phòng tập phù hợp cho bạn</p>
+                </div>
+                <div class="col-md-4 footer-column mb-4">
+                    <h3 class="fw-semibold mb-4">Liên kết nhanh</h3>
+                    <a href="index.html" class="d-block mb-2"><i class="fas fa-home me-2"></i> Trang chủ</a>
+                    <a href="#" class="d-block mb-2"><i class="fas fa-dumbbell me-2"></i> Phòng tập</a>
+                    <a href="#" class="d-block mb-2"><i class="fas fa-user me-2"></i> Huấn luyện viên</a>
+                    <a href="#" class="d-block mb-2"><i class="fas fa-box me-2"></i> Gói tập</a>
+                    <a href="#" class="d-block mb-2"><i class="fas fa-envelope me-2"></i> Liên hệ</a>
+                </div>
+                <div class="col-md-4 footer-column mb-4">
+                    <h3 class="fw-semibold mb-4">Liên hệ</h3>
+                    <p class="mb-2">Email: dolanh0000@gmail.com</p>
+                    <p class="mb-2">Điện thoại: 0936212369</p>
+                    <p class="mb-2">Địa chỉ: Nguyễn Văn Linh</p>
+                </div>
+            </div>
+            <div class="footer-bottom text-center pt-4">
+                <p>© 2025 Power Fitness. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="btn btn-primary back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        // Biến toàn cục để lưu trữ bản đồ
+        let map;
+        let mapLat = 16.047079; // Tọa độ mặc định
+        let mapLng = 108.206230;
+
+        // Hàm khởi tạo bản đồ Google Maps
+        window.initMap = function () {
+            const mapOptions = {
+                center: { lat: mapLat, lng: mapLng },
+                zoom: 15,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+            // Thêm marker tại vị trí phòng gym
+            new google.maps.Marker({
+                position: { lat: mapLat, lng: mapLng },
+                map: map,
+                title: document.getElementById('branch-name').textContent || 'Phòng gym'
+            });
+        }
+
+        // Lấy BranchID từ URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const branchId = urlParams.get('id');
+
+        // Gọi API để lấy chi tiết phòng gym
+        async function fetchGymDetail() {
+            try {
+                const response = await fetch(`http://localhost:5197/api/GymBranches/${branchId}`);
+                if (!response.ok) {
+                    throw new Error(`Không thể lấy dữ liệu phòng gym: ${response.status} ${response.statusText}`);
+                }
+                const data = await response.json();
+
+                // Hiển thị thông tin phòng gym
+                document.getElementById('branch-name').textContent = data.branchName;
+                document.getElementById('address').textContent = `${data.address}, ${data.district}, ${data.city}`;
+                document.getElementById('phone').textContent = data.phoneNumber;
+                document.getElementById('email').textContent = data.email || 'Không có';
+                document.getElementById('opening-hours').textContent = data.openingHours;
+                document.getElementById('rating').textContent = data.ratingAverage.toFixed(1);
+                document.getElementById('review-count').textContent = data.reviewCount;
+                document.getElementById('description').textContent = data.description;
+
+                // Hiển thị hình ảnh chính
+                const mainImage = data.branchImages.find(img => img.isMainImage);
+                document.getElementById('main-image').src = mainImage ? mainImage.imageURL : 'images/placeholder.jpg';
+
+                // Hiển thị thư viện hình ảnh
+                const gallery = document.querySelector('.image-gallery');
+                data.branchImages.forEach(img => {
+                    const imgElement = document.createElement('img');
+                    imgElement.src = img.imageURL;
+                    imgElement.alt = img.caption || 'Hình ảnh phòng tập';
+                    imgElement.className = 'img-fluid rounded shadow-sm';
+                    imgElement.style.cursor = 'pointer';
+                    imgElement.onclick = () => document.getElementById('main-image').src = img.imageURL;
+                    gallery.appendChild(imgElement);
+                });
+
+                // Hiển thị tiện ích
+                const facilitiesContainer = document.getElementById('facilities');
+                data.facilities.forEach(facility => {
+                    const facilityElement = document.createElement('div');
+                    facilityElement.className = 'card facility-card p-3 shadow-sm text-center';
+                    facilityElement.style.width = '180px';
+                    facilityElement.innerHTML = `
+                            <i class="${facility.iconClass} fa-2x mb-3 text-primary"></i>
+                            <h5 class="fw-semibold">${facility.facilityName}</h5>
+                            <p class="text-muted">${facility.description}</p>
+                        `;
+                    facilitiesContainer.appendChild(facilityElement);
+                });
+
+                // Hiển thị gói thành viên
+                const packagesContainer = document.getElementById('membership-packages');
+                data.membershipPackages.forEach(pkg => {
+                    const pkgElement = document.createElement('div');
+                    pkgElement.className = 'col-md-4 mb-4';
+                    pkgElement.innerHTML = `
+                            <div class="card package-card h-100 shadow-sm text-center">
+                                <div class="card-body">
+                                    <h3 class="card-title fw-semibold mb-3">${pkg.packageName}</h3>
+                                    <p class="card-text text-muted mb-3">${pkg.description}</p>
+                                    <p class="card-text mb-2"><strong>Giá:</strong> ${pkg.discountedPrice ? pkg.discountedPrice.toLocaleString('vi-VN') : pkg.price.toLocaleString('vi-VN')} VND</p>
+                                    <p class="card-text mb-4"><strong>Thời hạn:</strong> ${pkg.duration} ${pkg.durationType}</p>
+                                    <a href="#" class="btn btn-outline-primary">Chọn gói</a>
+                                </div>
+                            </div>
+                        `;
+                    packagesContainer.appendChild(pkgElement);
+                });
+
+                // Hiển thị đánh giá
+                const reviewsContainer = document.getElementById('reviews');
+                data.reviews.forEach(review => {
+                    const reviewElement = document.createElement('div');
+                    reviewElement.className = 'card review-card p-3 shadow-sm';
+                    reviewElement.innerHTML = `
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-user-circle fa-2x me-2 text-primary"></i>
+                                <div>
+                                    <h5 class="mb-0 fw-semibold">${review.userFullName}</h5>
+                                    <p class="mb-0 text-muted small">${new Date(review.reviewDate).toLocaleDateString('vi-VN')}</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                ${Array(review.rating).fill('<i class="fas fa-star text-warning me-1"></i>').join('')}
+                                ${Array(5 - review.rating).fill('<i class="fas fa-star text-muted me-1"></i>').join('')}
+                            </div>
+                            <p class="text-muted">${review.comment}</p>
+                        `;
+                    reviewsContainer.appendChild(reviewElement);
+                });
+
+                // Cập nhật liên kết bản đồ
+                const mapLink = `https://www.google.com/maps?q=${data.latitude},${data.longitude}`;
+                document.getElementById('map-location').href = mapLink;
+
+                // Cập nhật tọa độ và khởi tạo bản đồ
+                mapLat = Number(data.latitude);
+                mapLng = Number(data.longitude);
+
+                // Kiểm tra xem google đã được định nghĩa chưa
+                if (typeof google !== 'undefined') {
+                    window.initMap();
+                } else {
+                    console.error('Google Maps API chưa được tải. Đợi callback initMap tự động gọi.');
+                }
+
+            } catch (error) {
+                console.error('Lỗi:', error.message);
+                alert(`Có lỗi xảy ra khi tải thông tin phòng gym: ${error.message}`);
+                // Nếu có lỗi, hiển thị bản đồ mặc định
+                if (typeof google !== 'undefined') {
+                    window.initMap();
+                }
+            }
+        }
+
+        // Gọi hàm lấy chi tiết khi trang được tải
+        document.addEventListener('DOMContentLoaded', fetchGymDetail);
+
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
