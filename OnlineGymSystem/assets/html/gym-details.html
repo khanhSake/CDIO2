@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết phòng tập | GymSystem Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .navbar {
+            background-color: #212529;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .gallery-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            height: 500px;
+            margin-bottom: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                height: auto;
+            }
+            
+            .main-image {
+                grid-row: auto;
+                height: 300px;
+            }
+            
+            .small-image {
+                height: 200px;
+            }
+        }
+        
+        .main-image {
+            grid-row: span 2;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .small-image {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .gallery-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        
+        .gallery-image:hover {
+            transform: scale(1.05);
+        }
+        
+        .gym-features {
+            margin: 30px 0;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .feature-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #f8f9fa;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: #0d6efd;
+        }
+        
+        .plan-table {
+            margin: 30px 0;
+        }
+        
+        .rating-box {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .review {
+            border-bottom: 1px solid #dee2e6;
+            padding: 20px 0;
+        }
+        
+        .review:last-child {
+            border-bottom: none;
+        }
+        
+        .map-container {
+            height: 400px;
+            margin: 30px 0;
+        }
+        
+        .action-buttons {
+            position: sticky;
+            bottom: 0;
+            background-color: white;
+            padding: 15px 0;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">GymSystem Online</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Phòng tập</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Huấn luyện viên</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Khóa học</a>
+                    </li>
+                </ul>
+                <div>
+                    <button class="btn btn-outline-light me-2">Đăng nhập</button>
+                    <button class="btn btn-primary">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Gym Title and Location -->
+        <div class="mb-4">
+            <h1 class="mb-2">GymSystem Online Premium Quận 1</h1>
+            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>123 Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh</p>
+        </div>
+
+        <!-- Photo Gallery -->
+        <div class="gallery-container">
+            <div class="main-image">
+                <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3" alt="Không gian chính của phòng tập" class="gallery-image">
+            </div>
+            <div class="small-image">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3" alt="Khu vực tập luyện" class="gallery-image">
+            </div>
+            <div class="small-image">
+                <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&q=80&w=2675&ixlib=rb-4.0.3" alt="Khu vực cardio" class="gallery-image">
+            </div>
+        </div>
+
+        <!-- Description and Features -->
+        <div class="row">
+            <div class="col-lg-8">
+                <h2>Giới thiệu</h2>
+                <p>GymSystem Online Premium Quận 1 là cơ sở hàng đầu của chuỗi phòng tập GymSystem Online với diện tích hơn 2000m², trang bị đầy đủ các thiết bị tập luyện hiện đại nhất. Đội ngũ huấn luyện viên chuyên nghiệp, nhiệt tình sẽ đồng hành cùng bạn trong hành trình rèn luyện sức khỏe.</p>
+                
+                <div class="gym-features">
+                    <h3>Tiện nghi</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-dumbbell"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Thiết bị hiện đại</h5>
+                                    <p class="text-muted mb-0">Máy móc nhập khẩu từ Mỹ, EU</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-shower"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Phòng tắm cao cấp</h5>
+                                    <p class="text-muted mb-0">Đầy đủ tiện nghi, sạch sẽ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-person-swimming"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Bể bơi 4 mùa</h5>
+                                    <p class="text-muted mb-0">Nước được lọc và kiểm soát nhiệt độ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Bãi đỗ xe</h5>
+                                    <p class="text-muted mb-0">Miễn phí cho hội viên</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pricing Plans -->
+                <div class="plan-table">
+                    <h3>Các gói tập luyện</h3>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Gói tập</th>
+                                    <th>Giá thành</th>
+                                    <th>Đặc quyền</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <h5>Basic (1 tháng)</h5>
+                                        <p class="mb-0 text-muted">Truy cập cơ bản với phòng tập</p>
+                                    </td>
+                                    <td>500.000 VNĐ</td>
+                                    <td>
+                                        <ul class="mb-0">
+                                            <li>Không giới hạn thời gian tập</li>
+                                            <li>Tủ đồ tiêu chuẩn</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h5>Standard (3 tháng)</h5>
+                                        <p class="mb-0 text-muted">Truy cập đầy đủ với ưu đãi</p>
+                                    </td>
+                                    <td>1.350.000 VNĐ</td>
+                                    <td>
+                                        <ul class="mb-0">
+                                            <li>Tất cả quyền lợi của gói Basic</li>
+                                            <li>2 buổi PT miễn phí</li>
+                                            <li>Sử dụng bể bơi</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h5>Premium (12 tháng)</h5>
+                                        <p class="mb-0 text-muted">Trải nghiệm VIP</p>
+                                    </td>
+                                    <td>4.800.000 VNĐ</td>
+                                    <td>
+                                        <ul class="mb-0">
+                                            <li>Tất cả quyền lợi của gói Standard</li>
+                                            <li>8 buổi PT miễn phí</li>
+                                            <li>Phòng xông hơi không giới hạn</li>
+                                            <li>Đồ uống protein miễn phí</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Reviews -->
+                <div>
+                    <h3>Đánh giá từ hội viên</h3>
+                    <div class="review">
+                        <div class="d-flex justify-content-between mb-2">
+                            <h5>Nguyễn Văn A</h5>
+                            <div>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                        </div>
+                        <p class="mb-0">Phòng tập rất thoáng và sạch sẽ. Thiết bị hiện đại và đầy đủ. Nhân viên thân thiện và nhiệt tình. Mình rất hài lòng khi tập luyện tại đây.</p>
+                    </div>
+                    <div class="review">
+                        <div class="d-flex justify-content-between mb-2">
+                            <h5>Trần Thị B</h5>
+                            <div>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-warning"></i>
+                            </div>
+                        </div>
+                        <p class="mb-0">PT rất chuyên nghiệp, đã giúp mình đạt được mục tiêu giảm cân trong 3 tháng. Tuy nhiên phòng thay đồ hơi nhỏ vào giờ cao điểm.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <div class="rating-box">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="mb-0">Xếp hạng</h4>
+                        <span class="badge bg-success fs-6">4.8/5</span>
+                    </div>
+                    <div class="progress mb-2" style="height: 10px;">
+                        <div class="progress-bar bg-success" style="width: 85%;">5 sao (85%)</div>
+                    </div>
+                    <div class="progress mb-2" style="height: 10px;">
+                        <div class="progress-bar bg-success" style="width: 10%;">4 sao (10%)</div>
+                    </div>
+                    <div class="progress mb-2" style="height: 10px;">
+                        <div class="progress-bar bg-warning" style="width: 3%;">3 sao (3%)</div>
+                    </div>
+                    <div class="progress mb-2" style="height: 10px;">
+                        <div class="progress-bar bg-danger" style="width: 1%;">2 sao (1%)</div>
+                    </div>
+                    <div class="progress mb-3" style="height: 10px;">
+                        <div class="progress-bar bg-danger" style="width: 1%;">1 sao (1%)</div>
+                    </div>
+                    <p class="text-muted mb-0">Dựa trên 350 đánh giá</p>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4>Thông tin liên hệ</h4>
+                        <div class="mb-3">
+                            <i class="fas fa-phone me-2"></i> 028 1234 5678
+                        </div>
+                        <div class="mb-3">
+                            <i class="fas fa-envelope me-2"></i> q1@gymsystem.vn
+                        </div>
+                        <div>
+                            <i class="fas fa-clock me-2"></i> Mở cửa: 05:30 - 22:00 (Hàng ngày)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Google Maps -->
+        <div class="map-container">
+            <h3>Vị trí</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4241674197876!2d106.70141811471856!3d10.777168992321254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4670702e31%3A0xa5777fb3a5bb9972!2zMTIzIE5ndXnhu4VuIEh14buHLCBC4bq_biBOZ2jDqSwgUXXhuq1uIDEsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1621845905695!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </main>
+
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h4 class="mb-0">Bắt đầu từ 500.000 VNĐ/tháng</h4>
+                    <p class="mb-0 text-muted">Trả góp 0% lãi suất với thẻ tín dụng</p>
+                </div>
+                <div>
+                    <button class="btn btn-outline-primary me-2">Tư vấn qua điện thoại</button>
+                    <button class="btn btn-primary">Đăng ký ngay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>GymSystem Online</h5>
+                    <p>Mạng lưới phòng tập hiện đại hàng đầu Việt Nam với hơn 20 cơ sở trên toàn quốc.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Liên kết nhanh</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Về chúng tôi</a></li>
+                        <li><a href="#" class="text-white">Tìm phòng tập</a></li>
+                        <li><a href="#" class="text-white">Huấn luyện viên</a></li>
+                        <li><a href="#" class="text-white">Chương trình tập luyện</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Kết nối với chúng tôi</h5>
+                    <div class="d-flex gap-3 mb-3">
+                        <a href="#" class="text-white fs-5"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                    <p class="mb-0">© 2025 GymSystem Online. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

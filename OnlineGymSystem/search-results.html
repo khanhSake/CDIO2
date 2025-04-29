@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kết quả tìm kiếm - Online Gym</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/search-results.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="booking-styled">
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="Online Gym Logo">
+                        <span>Online Gym</span>
+                    </a>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="#">Lớp học</a></li>
+                        <li><a href="#">Huấn luyện viên</a></li>
+                        <li><a href="#">Gói tập</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-right">
+                    <div class="language-selector">
+                        <img src="assets/images/vietnam-flag.png" alt="Tiếng Việt">
+                        <span>VN</span>
+                    </div>
+                    
+                    <div class="auth-buttons">
+                        <a href="#" class="btn btn-outline">Đăng nhập</a>
+                        <a href="#" class="btn btn-primary">Đăng ký</a>
+                    </div>
+                </div>
+                
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Bar Fixed -->
+    <div class="search-bar-fixed">
+        <div class="container">
+            <form action="#" method="GET" class="mini-search-form">
+                <div class="mini-form-group">
+                    <label for="mini-gym-location">
+                        <i class="fas fa-dumbbell"></i>
+                        Cơ sở/Phòng gym
+                    </label>
+                    <select id="mini-gym-location" name="location">
+                        <option value="ho-chi-minh" selected>Hồ Chí Minh</option>
+                        <option value="ha-noi">Hà Nội</option>
+                        <option value="da-nang">Đà Nẵng</option>
+                        <option value="nha-trang">Nha Trang</option>
+                        <option value="can-tho">Cần Thơ</option>
+                    </select>
+                </div>
+                
+                <div class="mini-form-group">
+                    <label for="mini-start-date">
+                        <i class="far fa-calendar-alt"></i>
+                        Ngày bắt đầu
+                    </label>
+                    <input type="date" id="mini-start-date" name="start-date" value="2025-04-10">
+                </div>
+                
+                <div class="mini-form-group">
+                    <label for="mini-package-type">
+                        <i class="fas fa-cube"></i>
+                        Loại gói tập
+                    </label>
+                    <select id="mini-package-type" name="package-type">
+                        <option value="all" selected>Tất cả</option>
+                        <option value="standard">Chuẩn</option>
+                        <option value="premium">Cao cấp</option>
+                        <option value="pt">PT Cá nhân</option>
+                        <option value="yoga">Yoga</option>
+                        <option value="zumba">Zumba</option>
+                    </select>
+                </div>
+                
+                <div class="mini-form-group">
+                    <label for="mini-people-count">
+                        <i class="fas fa-users"></i>
+                        Số người
+                    </label>
+                    <select id="mini-people-count" name="people-count">
+                        <option value="1" selected>1 người</option>
+                        <option value="2">2 người</option>
+                        <option value="3">3 người</option>
+                        <option value="4">4 người</option>
+                        <option value="group">Nhóm (5+)</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn btn-primary mini-search-btn">
+                    <i class="fas fa-search"></i>
+                    Tìm
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="search-results-content">
+        <div class="container">
+            <div class="search-results-wrapper">
+                <!-- Sidebar Filters -->
+                <aside class="filters-sidebar">
+                    <div class="filter-section">
+                        <h3>Bộ lọc</h3>
+                        <div class="filter-count">
+                            <span>15 phòng gym được tìm thấy</span>
+                        </div>
+                    </div>
+
+                    <!-- Map preview (Optional) -->
+                    <div class="map-preview">
+                        <img src="assets/images/map-preview.jpg" alt="Bản đồ các phòng gym">
+                        <button class="btn btn-outline btn-sm btn-map">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Xem trên bản đồ
+                        </button>
+                    </div>
+
+                    <!-- Popular filters -->
+                    <div class="filter-section">
+                        <h4>Bộ lọc phổ biến</h4>
+                        <div class="filter-options">
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="filter-near" checked>
+                                <span class="checkmark"></span>
+                                <span class="filter-text">Gần nhà</span>
+                                <span class="filter-count">(10)</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="filter-pt">
+                                <span class="checkmark"></span>
+                                <span class="filter-text">Có PT riêng</span>
+                                <span class="filter-count">(8)</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="filter-24h">
+                                <span class="checkmark"></span>
+                                <span class="filter-text">Gym 24h</span>
+                                <span class="filter-count">(5)</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="filter-crossfit">
+                                <span class="checkmark"></span>
+                                <span class="filter-text">CrossFit</span>
+                                <span class="filter-count">(6)</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="filter-yoga">
+                                <span class="checkmark"></span>
+                                <span class="filter-text">Yoga</span>
+                                <span class="filter-count">(7)</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="filter-zumba">
+                                <span class="checkmark"></span>
+                                <span class="filter-text">Zumba</span>
+                                <span class="filter-count">(4)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Amenities filters -->
+                    <div class="filter-section">
+                        <h4>Tiện nghi / Dịch vụ</h4>
+                        <div class="filter-options">
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="filter-sauna">
+                                <span class="checkmark"></span>
+                                <span class="filter-text">Phòng xông hơi</span>
+                                <span class="filter-count">(7)</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="filter-pool">
+                                <span class="checkmark"></span>
+                                <span class="filter-text">Hồ bơi</span>
+                                <span class="filter-count">(5)</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="filter-parking">
+                                <span class="checkmark"></span>
+                                <span class="filter-text">Bãi đậu xe</span>
+                                <span class="filter-count">(12)</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="filter-wifi">
+                                <span class="checkmark"></span>
+                                <span class="filter-text">Wi-Fi miễn phí</span>
+                                <span class="filter-count">(15)</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="filter-shower">
+                                <span class="checkmark"></span>
+                                <span class="filter-text">Phòng tắm</span>
+                                <span class="filter-count">(15)</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="filter-locker">
+                                <span class="checkmark"></span>
+                                <span class="filter-text">Tủ khóa</span>
+                                <span class="filter-count">(14)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Gym Type Filters -->
+                    <div class="filter-section">
+                        <h4>Loại hình phòng gym</h4>
+                        <div class="filter-options">
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="filter-standard">
+                                <span class="checkmark"></span>
+                                <span class="filter-text">Gym thường</span>
+                                <span class="filter-count">(9)</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="filter-fitness">
+                                <span class="checkmark"></span>
+                                <span class="filter-text">Fitness studio</span>
+                                <span class="filter-count">(5)</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="filter-yoga-studio">
+                                <span class="checkmark"></span>
+                                <span class="filter-text">Yoga studio</span>
+                                <span class="filter-count">(3)</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="filter-premium">
+                                <span class="checkmark"></span>
+                                <span class="filter-text">Phòng tập cao cấp</span>
+                                <span class="filter-count">(4)</span>
+                            </label>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Search Results -->
+                <div class="results-container">
+                    <div class="results-header">
+                        <div class="results-count" id="results-summary">
+                            <h2><span id="total-results-count">0</span> phòng gym được tìm thấy</h2>
+                            <p>Hiển thị kết quả tìm kiếm</p>
+                        </div>
+                        <div class="sort-options">
+                            <span>Sắp xếp theo:</span>
+                            <select id="sort-select" class="sort-select">
+                                <option value="recommended">Được đề xuất</option>
+                                <option value="rating">Đánh giá cao nhất</option>
+                                <option value="distance">Gần nhất</option>
+                                <option value="price-low">Giá: thấp đến cao</option>
+                                <option value="price-high">Giá: cao đến thấp</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Results List -->
+                    <div class="results-list" id="results-list-container">
+                        <!-- Các mục kết quả tĩnh đã bị xóa -->
+                        <!-- Kết quả tìm kiếm sẽ được chèn vào đây bằng JavaScript -->
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination" id="pagination-container">
+                        <!-- Phân trang sẽ được tạo bằng JavaScript nếu cần -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.png" alt="Online Gym Logo">
+                        <span>Online Gym</span>
+                    </div>
+                    <p>Hệ thống quản lý phòng tập trực tuyến giúp bạn dễ dàng đặt lịch, theo dõi tiến độ và đạt được mục tiêu tập luyện.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Liên kết nhanh</h3>
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Lớp học</a></li>
+                        <li><a href="#">Huấn luyện viên</a></li>
+                        <li><a href="#">Gói tập</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Trợ giúp</h3>
+                    <ul>
+                        <li><a href="#">Hướng dẫn đặt lịch</a></li>
+                        <li><a href="#">Câu hỏi thường gặp</a></li>
+                        <li><a href="#">Chính sách hoàn tiền</a></li>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Liên hệ</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Nguyễn Văn Linh, Quận 7, TP.HCM</li>
+                        <li><i class="fas fa-phone"></i> 1900 1234</li>
+                        <li><i class="fas fa-envelope"></i> info@onlinegym.vn</li>
+                    </ul>
+                    <div class="app-download">
+                        <p>Tải ứng dụng</p>
+                        <div class="app-buttons">
+                            <a href="#"><img src="assets/images/app-store.png" alt="App Store"></a>
+                            <a href="#"><img src="assets/images/google-play.png" alt="Google Play"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Online Gym - Hệ thống quản lý phòng tập trực tuyến. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/search-results.js"></script>
+</body>
+</html> 

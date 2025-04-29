@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>California Fitness & Yoga | OnlineGymSystem</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/gym-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="OnlineGymSystem">
+                </a>
+            </div>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="gyms.html" class="active">Phòng tập</a></li>
+                    <li><a href="trainers.html">Huấn luyện viên</a></li>
+                    <li><a href="classes.html">Lớp học</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-buttons">
+                <a href="login.html" class="btn btn-secondary">Đăng nhập</a>
+                <a href="register.html" class="btn btn-primary">Đăng ký</a>
+            </div>
+            
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="gyms.html">Phòng tập</a></li>
+                <li>California Fitness & Yoga</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Gym Details -->
+    <main class="gym-details-page">
+        <div class="container">
+            <div class="gym-header">
+                <div class="gym-header-left">
+                    <h1 class="gym-title">California Fitness & Yoga</h1>
+                    <div class="gym-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Nguyễn Du, Quận 1, TP. Hồ Chí Minh</span>
+                    </div>
+                    <div class="gym-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-value">4.5</span>
+                        <span class="rating-count">(128 đánh giá)</span>
+                    </div>
+                </div>
+                <div class="gym-header-right">
+                    <button class="btn-share" id="share-button">
+                        <i class="fas fa-share-alt"></i> Chia sẻ
+                    </button>
+                    <button class="btn-save">
+                        <i class="far fa-heart"></i> Lưu
+                    </button>
+                </div>
+            </div>
+
+            <!-- Photo Gallery -->
+            <div class="photo-gallery">
+                <div class="gallery-main">
+                    <img src="assets/images/gym-1.jpg" alt="California Fitness & Yoga">
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="assets/images/gym-2.jpg" alt="California Fitness & Yoga">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/gym-3.jpg" alt="California Fitness & Yoga">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/gym-4.jpg" alt="California Fitness & Yoga">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/gym-5.jpg" alt="California Fitness & Yoga">
+                    </div>
+                </div>
+                <button class="btn-all-photos" id="show-all-photos">
+                    <i class="fas fa-th"></i> Xem tất cả ảnh
+                </button>
+            </div>
+
+            <div class="gym-content">
+                <div class="gym-main">
+                    <section class="gym-description">
+                        <h2>Giới thiệu</h2>
+                        <p>California Fitness & Yoga là một trong những hệ thống phòng tập tiên phong và đẳng cấp hàng đầu tại Việt Nam. Với 32 câu lạc bộ trải khắp các thành phố lớn, California mang đến trải nghiệm tập luyện đỉnh cao với đội ngũ huấn luyện viên chuyên nghiệp, thiết bị hiện đại nhập khẩu từ Mỹ, đa dạng các lớp học theo nhóm sôi động và không gian đẳng cấp 5 sao.</p>
+                        <p>Phòng tập được trang bị đầy đủ các thiết bị và máy tập hiện đại, không gian rộng rãi, thoáng mát và sang trọng. Đội ngũ huấn luyện viên chuyên nghiệp, nhiệt tình sẽ giúp bạn đạt được mục tiêu sức khỏe và hình thể một cách hiệu quả nhất.</p>
+                    </section>
+
+                    <section class="gym-amenities">
+                        <h2>Tiện ích</h2>
+                        <div class="amenities-grid">
+                            <div class="amenity-item">
+                                <i class="fas fa-dumbbell"></i>
+                                <span>Khu vực tập tạ</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-running"></i>
+                                <span>Khu vực cardio</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-swimming-pool"></i>
+                                <span>Hồ bơi</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-hot-tub"></i>
+                                <span>Xông hơi</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-biking"></i>
+                                <span>Lớp Spinning</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-soap"></i>
+                                <span>Phòng tắm</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-tshirt"></i>
+                                <span>Tủ đồ cá nhân</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-parking"></i>
+                                <span>Bãi đậu xe</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-wifi"></i>
+                                <span>WiFi miễn phí</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-coffee"></i>
+                                <span>Quầy nước</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="gym-membership">
+                        <h2>Gói tập</h2>
+                        <div class="membership-plans">
+                            <div class="membership-card">
+                                <div class="membership-header">
+                                    <h3>Gói Basic</h3>
+                                    <div class="price">
+                                        <span class="amount">599.000đ</span>
+                                        <span class="period">/ tháng</span>
+                                    </div>
+                                </div>
+                                <div class="membership-benefits">
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Tập không giới hạn thời gian</li>
+                                        <li><i class="fas fa-check"></i> Sử dụng thiết bị tập luyện</li>
+                                        <li><i class="fas fa-check"></i> Tủ đồ cá nhân</li>
+                                        <li><i class="fas fa-check"></i> Phòng tắm, xông hơi</li>
+                                        <li><i class="fas fa-times"></i> PT cá nhân</li>
+                                        <li><i class="fas fa-times"></i> Lớp học nhóm</li>
+                                    </ul>
+                                </div>
+                                <a href="register-membership.html" class="btn btn-primary btn-register">Đăng ký ngay</a>
+                            </div>
+
+                            <div class="membership-card featured">
+                                <div class="membership-header">
+                                    <div class="popular-tag">Phổ biến nhất</div>
+                                    <h3>Gói Premium</h3>
+                                    <div class="price">
+                                        <span class="amount">999.000đ</span>
+                                        <span class="period">/ tháng</span>
+                                    </div>
+                                </div>
+                                <div class="membership-benefits">
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Tập không giới hạn thời gian</li>
+                                        <li><i class="fas fa-check"></i> Sử dụng thiết bị tập luyện</li>
+                                        <li><i class="fas fa-check"></i> Tủ đồ cá nhân</li>
+                                        <li><i class="fas fa-check"></i> Phòng tắm, xông hơi</li>
+                                        <li><i class="fas fa-check"></i> 4 buổi PT cá nhân/tháng</li>
+                                        <li><i class="fas fa-check"></i> Tham gia các lớp học nhóm</li>
+                                    </ul>
+                                </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-glass-water"></i>
+                                <span>Nước uống miễn phí</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-shuttle-van"></i>
+                                <span>Xe đưa đón</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-fan"></i>
+                                <span>Điều hòa</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Membership Packages -->
+                    <section class="gym-section">
+                        <h2 class="section-title">Các gói tập</h2>
+                        <div class="package-table-wrapper">
+                            <table class="package-table">
+                                <thead>
+                                    <tr>
+                                        <th>Tên gói</th>
+                                        <th>Giá gói tập</th>
+                                        <th>Thời hạn</th>
+                                        <th>Dịch vụ kèm theo</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="package-name">
+                                            <h3>Cơ bản</h3>
+                                            <span class="package-badge">Phổ biến</span>
+                                        </td>
+                                        <td class="package-price">
+                                            <span class="price">499.000đ</span>
+                                            <span class="period">/tháng</span>
+                                        </td>
+                                        <td class="package-duration">1 tháng</td>
+                                        <td class="package-features">
+                                            <ul>
+                                                <li><i class="fas fa-check"></i> Tập không giới hạn thời gian</li>
+                                                <li><i class="fas fa-check"></i> Sử dụng tất cả máy tập</li>
+                                                <li><i class="fas fa-check"></i> Tham gia các lớp theo lịch</li>
+                                                <li><i class="fas fa-check"></i> Tủ khóa, phòng tắm</li>
+                                                <li><i class="fas fa-check"></i> Nước uống miễn phí</li>
+                                            </ul>
+                                        </td>
+                                        <td class="package-action">
+                                            <a href="#" class="btn btn-primary btn-block">Đăng ký ngay</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="package-name">
+                                            <h3>Premium</h3>
+                                            <span class="package-badge package-badge-accent">Tiết kiệm 30%</span>
+                                        </td>
+                                        <td class="package-price">
+                                            <span class="price-was">799.000đ</span>
+                                            <span class="price">559.000đ</span>
+                                            <span class="period">/tháng</span>
+                                        </td>
+                                        <td class="package-duration">3 tháng</td>
+                                        <td class="package-features">
+                                            <ul>
+                                                <li><i class="fas fa-check"></i> Tất cả dịch vụ của gói Cơ bản</li>
+                                                <li><i class="fas fa-check"></i> 2 buổi PT miễn phí/tháng</li>
+                                                <li><i class="fas fa-check"></i> Sử dụng phòng xông hơi</li>
+                                                <li><i class="fas fa-check"></i> Sử dụng hồ bơi</li>
+                                                <li><i class="fas fa-check"></i> Đồ uống dinh dưỡng sau tập</li>
+                                            </ul>
+                                        </td>
+                                        <td class="package-action">
+                                            <a href="#" class="btn btn-primary btn-block">Đăng ký ngay</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="package-name">
+                                            <h3>VIP</h3>
+                                        </td>
+                                        <td class="package-price">
+                                            <span class="price">1.299.000đ</span>
+                                            <span class="period">/tháng</span>
+                                        </td>
+                                        <td class="package-duration">12 tháng</td>
+                                        <td class="package-features">
+                                            <ul>
+                                                <li><i class="fas fa-check"></i> Tất cả dịch vụ của gói Premium</li>
+                                                <li><i class="fas fa-check"></i> 4 buổi PT miễn phí/tháng</li>
+                                                <li><i class="fas fa-check"></i> Xe đưa đón tận nơi</li>
+                                                <li><i class="fas fa-check"></i> Chế độ dinh dưỡng cá nhân hóa</li>
+                                                <li><i class="fas fa-check"></i> Ưu tiên đặt lịch các lớp hot</li>
+                                            </ul>
+                                        </td>
+                                        <td class="package-action">
+                                            <a href="#" class="btn btn-primary btn-block">Đăng ký ngay</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!-- Ratings Section -->
+                    <section class="gym-section" id="ratings-section">
+                        <h2 class="section-title">Đánh giá từ học viên</h2>
+                        <div class="ratings-wrapper">
+                            <div class="ratings-summary">
+                                <div class="rating-average">
+                                    <div class="rating-score">9.2</div>
+                                    <div class="rating-label">Xuất sắc</div>
+                                    <div class="rating-count">128 đánh giá</div>
+                                </div>
+                                <div class="rating-categories">
+                                    <div class="rating-category">
+                                        <span class="category-name">Chất lượng huấn luyện viên</span>
+                                        <div class="rating-bar-container">
+                                            <div class="rating-bar" style="width: 94%"></div>
+                                        </div>
+                                        <span class="category-score">9.4</span>
+                                    </div>
+                                    <div class="rating-category">
+                                        <span class="category-name">Sạch sẽ</span>
+                                        <div class="rating-bar-container">
+                                            <div class="rating-bar" style="width: 92%"></div>
+                                        </div>
+                                        <span class="category-score">9.2</span>
+                                    </div>
+                                    <div class="rating-category">
+                                        <span class="category-name">Tiện nghi</span>
+                                        <div class="rating-bar-container">
+                                            <div class="rating-bar" style="width: 90%"></div>
+                                        </div>
+                                        <span class="category-score">9.0</span>
+                                    </div>
+                                    <div class="rating-category">
+                                        <span class="category-name">Đáng giá tiền</span>
+                                        <div class="rating-bar-container">
+                                            <div class="rating-bar" style="width: 89%"></div>
+                                        </div>
+                                        <span class="category-score">8.9</span>
+                                    </div>
+                                    <div class="rating-category">
+                                        <span class="category-name">Địa điểm</span>
+                                        <div class="rating-bar-container">
+                                            <div class="rating-bar" style="width: 96%"></div>
+                                        </div>
+                                        <span class="category-score">9.6</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Reviews -->
+                            <div class="reviews-section">
+                                <h3 class="reviews-title">Nhận xét từ học viên</h3>
+                                
+                                <!-- Review Item 1 -->
+                                <div class="review-item">
+                                    <div class="review-user">
+                                        <div class="user-avatar">
+                                            <span>NT</span>
+                                        </div>
+                                        <div class="user-info">
+                                            <div class="user-name">Nguyễn Thành</div>
+                                            <div class="user-location">
+                                                <img src="assets/images/vietnam-flag.png" alt="Việt Nam" class="country-flag">
+                                                <span>Việt Nam</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-content">
+                                        <div class="review-rating">
+                                            <span class="review-score">9.5</span>
+                                            <span class="review-label">Xuất sắc</span>
+                                        </div>
+                                        <div class="review-text">
+                                            <p>"Tôi đã tập ở đây được 6 tháng và rất hài lòng với dịch vụ. Huấn luyện viên rất chuyên nghiệp và tận tâm. Thiết bị đầy đủ, hiện đại và luôn được vệ sinh sạch sẽ. Vị trí trung tâm rất thuận tiện cho việc di chuyển sau giờ làm."</p>
+                                        </div>
+                                        <div class="review-date">Đã đánh giá: 15 tháng 3, 2025</div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Review Item 2 -->
+                                <div class="review-item">
+                                    <div class="review-user">
+                                        <div class="user-avatar">
+                                            <span>TH</span>
+                                        </div>
+                                        <div class="user-info">
+                                            <div class="user-name">Trần Hương</div>
+                                            <div class="user-location">
+                                                <img src="assets/images/vietnam-flag.png" alt="Việt Nam" class="country-flag">
+                                                <span>Việt Nam</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-content">
+                                        <div class="review-rating">
+                                            <span class="review-score">8.8</span>
+                                            <span class="review-label">Rất tốt</span>
+                                        </div>
+                                        <div class="review-text">
+                                            <p>"Lớp Yoga và Zumba rất chất lượng. Giáo viên nhiệt tình, đúng giờ. Không gian rộng rãi, thoáng mát. Chỗ để xe hơi chật một chút vào giờ cao điểm. Nhân viên phục vụ thân thiện, nhiệt tình hỗ trợ."</p>
+                                        </div>
+                                        <div class="review-date">Đã đánh giá: 2 tháng 4, 2025</div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Review Item 3 -->
+                                <div class="review-item">
+                                    <div class="review-user">
+                                        <div class="user-avatar">
+                                            <span>LM</span>
+                                        </div>
+                                        <div class="user-info">
+                                            <div class="user-name">Lê Minh</div>
+                                            <div class="user-location">
+                                                <img src="assets/images/vietnam-flag.png" alt="Việt Nam" class="country-flag">
+                                                <span>Việt Nam</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-content">
+                                        <div class="review-rating">
+                                            <span class="review-score">9.7</span>
+                                            <span class="review-label">Xuất sắc</span>
+                                        </div>
+                                        <div class="review-text">
+                                            <p>"California Fitness là phòng tập tốt nhất mà tôi từng tham gia. PT của tôi, anh Tùng, rất chuyên nghiệp và luôn tạo động lực để tôi đạt được mục tiêu. Sau 3 tháng, tôi đã giảm được 8kg và cảm thấy khỏe mạnh hơn rất nhiều. Tôi đặc biệt thích hồ bơi và phòng xông hơi ở đây."</p>
+                                        </div>
+                                        <div class="review-date">Đã đánh giá: 20 tháng 3, 2025</div>
+                                    </div>
+                                </div>
+                                
+                                <a href="#" class="btn btn-outline load-more-reviews">Xem thêm đánh giá</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                
+                <!-- Right Column: Map and CTA -->
+                <div class="gym-sidebar">
+                    <div class="map-container" id="location-map">
+                        <h3>Vị trí phòng tập</h3>
+                        <div class="gym-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.394952644056!2d106.6951261!3d10.7849576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3c472c9e89%3A0xbeeea0acebbe4aad!2zMTI2IE5ndXnhu4VuIFRo4buLIE1pbmggS2hhaSwgUGjGsOG7nW5nIFBo4bqhbSBOZ8WpIEzDo28sIFF14bqtbiAxLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1649346284057!5m2!1svi!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="map-address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>126 Nguyễn Thị Minh Khai, Quận 1, TP. Hồ Chí Minh</span>
+                        </div>
+                        <div class="map-info">
+                            <div class="map-info-item">
+                                <i class="fas fa-walking"></i>
+                                <span>500m đến trung tâm thành phố</span>
+                            </div>
+                            <div class="map-info-item">
+                                <i class="fas fa-subway"></i>
+                                <span>Gần ga Metro Bến Thành (300m)</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-cta">
+                        <div class="cta-box">
+                            <h3>Đăng ký ngay hôm nay</h3>
+                            <p>Đăng ký thành viên trong tháng này để nhận ưu đãi đặc biệt!</p>
+                            <div class="cta-price">
+                                <span class="price-from">Chỉ từ</span>
+                                <span class="price">499.000đ</span>
+                                <span class="period">/tháng</span>
+                            </div>
+                            <button class="btn btn-accent btn-block">Đăng ký tập thử miễn phí</button>
+                            <button class="btn btn-primary btn-block">Đăng ký gói tập</button>
+                        </div>
+                        
+                        <div class="contact-box">
+                            <h3>Liên hệ</h3>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>028 3823 1234</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>info@californiafitness.vn</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Mở cửa: 06:00 - 22:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Actions -->
+            <div class="bottom-actions">
+                <a href="search-results.html" class="btn btn-outline">
+                    <i class="fas fa-arrow-left"></i>
+                    Trở về danh sách
+                </a>
+                <a href="#" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i>
+                    Đặt lịch tập thử
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.png" alt="Online Gym Logo">
+                        <span>Online Gym</span>
+                    </div>
+                    <p>Hệ thống quản lý phòng tập trực tuyến giúp bạn dễ dàng đặt lịch, theo dõi tiến độ và đạt được mục tiêu tập luyện.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Liên kết nhanh</h3>
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Lớp học</a></li>
+                        <li><a href="#">Huấn luyện viên</a></li>
+                        <li><a href="#">Gói tập</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Trợ giúp</h3>
+                    <ul>
+                        <li><a href="#">Hướng dẫn đặt lịch</a></li>
+                        <li><a href="#">Câu hỏi thường gặp</a></li>
+                        <li><a href="#">Chính sách hoàn tiền</a></li>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Liên hệ</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Nguyễn Văn Linh, Quận 7, TP.HCM</li>
+                        <li><i class="fas fa-phone"></i> 1900 1234</li>
+                        <li><i class="fas fa-envelope"></i> info@onlinegym.vn</li>
+                    </ul>
+                    <div class="app-download">
+                        <p>Tải ứng dụng</p>
+                        <div class="app-buttons">
+                            <a href="#"><img src="assets/images/app-store.png" alt="App Store"></a>
+                            <a href="#"><img src="assets/images/google-play.png" alt="Google Play"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Online Gym - Hệ thống quản lý phòng tập trực tuyến. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Photo Gallery Modal -->
+    <div class="photo-gallery-modal">
+        <div class="modal-close">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="gallery-container">
+            <div class="gallery-main">
+                <img src="assets/images/gym-1-large.jpg" alt="Ảnh phòng tập" id="gallery-main-image">
+            </div>
+            <div class="gallery-thumbnails">
+                <div class="gallery-thumbnail active">
+                    <img src="assets/images/gym-1-large.jpg" alt="Ảnh phòng tập">
+                </div>
+                <div class="gallery-thumbnail">
+                    <img src="assets/images/gym-1-small-1.jpg" alt="Khu vực tập luyện">
+                </div>
+                <div class="gallery-thumbnail">
+                    <img src="assets/images/gym-1-small-2.jpg" alt="Phòng Yoga">
+                </div>
+                <div class="gallery-thumbnail">
+                    <img src="assets/images/gym-1-small-3.jpg" alt="Hồ bơi">
+                </div>
+                <div class="gallery-thumbnail">
+                    <img src="assets/images/gym-1-small-4.jpg" alt="Phòng xông hơi">
+                </div>
+            </div>
+            <div class="gallery-controls">
+                <button class="gallery-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="gallery-counter">1/5</div>
+                <button class="gallery-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/gym-details.js"></script>
+</body>
+</html> 

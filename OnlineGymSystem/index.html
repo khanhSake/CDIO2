@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Gym - Hệ thống quản lý phòng tập trực tuyến</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="booking-styled">
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="Online Gym Logo">
+                        <span>Online Gym</span>
+                    </a>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Trang chủ</a></li>
+                        <li><a href="#">Lớp học</a></li>
+                        <li><a href="#">Huấn luyện viên</a></li>
+                        <li><a href="#">Gói tập</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-right">
+                    <div class="language-selector">
+                        <img src="assets/images/vietnam-flag.png" alt="Tiếng Việt">
+                        <span>VN</span>
+                    </div>
+                    
+                    <div class="auth-buttons">
+                        <a href="#" class="btn btn-outline">Đăng nhập</a>
+                        <a href="#" class="btn btn-primary">Đăng ký</a>
+                    </div>
+                </div>
+                
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Search -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Tìm phòng gym phù hợp với bạn</h1>
+                <p>Đăng ký gói tập, theo dõi lịch tập và đạt được mục tiêu của bạn</p>
+                
+                <!-- Search Form -->
+                <div class="search-box">
+                    <form action="search-results.html" method="GET" class="search-form">
+                        <div class="form-group">
+                            <label for="gym-location">
+                                <i class="fas fa-dumbbell"></i>
+                                Cơ sở/Phòng gym
+                            </label>
+                            <select id="gym-location" name="location">
+                                <option value="">Chọn cơ sở</option>
+                                <option value="ho-chi-minh">Hồ Chí Minh</option>
+                                <option value="ha-noi">Hà Nội</option>
+                                <option value="da-nang">Đà Nẵng</option>
+                                <option value="nha-trang">Nha Trang</option>
+                                <option value="can-tho">Cần Thơ</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="start-date">
+                                <i class="far fa-calendar-alt"></i>
+                                Ngày bắt đầu
+                            </label>
+                            <input type="date" id="start-date" name="start-date">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="package-type">
+                                <i class="fas fa-cube"></i>
+                                Loại gói tập
+                            </label>
+                            <select id="package-type" name="package-type">
+                                <option value="">Chọn gói tập</option>
+                                <option value="standard">Chuẩn</option>
+                                <option value="premium">Cao cấp</option>
+                                <option value="pt">PT Cá nhân</option>
+                                <option value="yoga">Yoga</option>
+                                <option value="zumba">Zumba</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="people-count">
+                                <i class="fas fa-users"></i>
+                                Số người
+                            </label>
+                            <select id="people-count" name="people-count">
+                                <option value="1">1 người</option>
+                                <option value="2">2 người</option>
+                                <option value="3">3 người</option>
+                                <option value="4">4 người</option>
+                                <option value="group">Nhóm (5+)</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary search-btn">
+                            <i class="fas fa-search"></i>
+                            Tìm gói tập
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotion Banner -->
+    <section class="promotion-banner">
+        <div class="container">
+            <div class="promo-content">
+                <h2>Đăng ký tháng đầu chỉ <span class="highlight">99.000đ</span></h2>
+                <p>Cơ hội giới hạn - Áp dụng cho thành viên mới</p>
+                <a href="#" class="btn btn-accent">Đăng ký ngay</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Packages -->
+    <section class="popular-packages">
+        <div class="container">
+            <div class="section-header">
+                <h2>Gói tập phổ biến</h2>
+                <p>Lựa chọn gói tập phù hợp với nhu cầu và mục tiêu của bạn</p>
+            </div>
+            
+            <div class="packages-grid">
+                <!-- Package 1 -->
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="assets/images/package-standard.jpg" alt="Gói tập chuẩn">
+                        <div class="package-badge">Phổ biến</div>
+                    </div>
+                    <div class="package-details">
+                        <h3>Gói tập chuẩn</h3>
+                        <div class="package-features">
+                            <p><i class="fas fa-check"></i> Tập luyện không giới hạn</p>
+                            <p><i class="fas fa-check"></i> Sử dụng tất cả máy tập</p>
+                            <p><i class="fas fa-check"></i> Tham gia lớp học theo lịch</p>
+                        </div>
+                        <div class="package-price">
+                            <span class="price">299.000đ</span>
+                            <span class="period">/tháng</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-block">Đăng ký ngay</a>
+                    </div>
+                </div>
+                
+                <!-- Package 2 -->
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="assets/images/package-premium.jpg" alt="Gói tập cao cấp">
+                        <div class="package-badge package-badge-accent">Tiết kiệm</div>
+                    </div>
+                    <div class="package-details">
+                        <h3>Gói tập cao cấp</h3>
+                        <div class="package-features">
+                            <p><i class="fas fa-check"></i> Tập luyện không giới hạn</p>
+                            <p><i class="fas fa-check"></i> 2 buổi PT miễn phí/tháng</p>
+                            <p><i class="fas fa-check"></i> Sử dụng phòng xông hơi</p>
+                            <p><i class="fas fa-check"></i> Nước uống miễn phí</p>
+                        </div>
+                        <div class="package-price">
+                            <span class="price">499.000đ</span>
+                            <span class="period">/tháng</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-block">Đăng ký ngay</a>
+                    </div>
+                </div>
+                
+                <!-- Package 3 -->
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="assets/images/package-pt.jpg" alt="Gói PT cá nhân">
+                    </div>
+                    <div class="package-details">
+                        <h3>Gói PT cá nhân</h3>
+                        <div class="package-features">
+                            <p><i class="fas fa-check"></i> 12 buổi tập với PT</p>
+                            <p><i class="fas fa-check"></i> Lịch tập linh hoạt</p>
+                            <p><i class="fas fa-check"></i> Chế độ dinh dưỡng cá nhân</p>
+                            <p><i class="fas fa-check"></i> Theo dõi tiến độ hàng tuần</p>
+                        </div>
+                        <div class="package-price">
+                            <span class="price">1.499.000đ</span>
+                            <span class="period">/gói</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-block">Đăng ký ngay</a>
+                    </div>
+                </div>
+                
+                <!-- Package 4 -->
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="assets/images/package-yoga.jpg" alt="Gói Yoga">
+                    </div>
+                    <div class="package-details">
+                        <h3>Gói Yoga</h3>
+                        <div class="package-features">
+                            <p><i class="fas fa-check"></i> 10 buổi Yoga/tháng</p>
+                            <p><i class="fas fa-check"></i> Đạo cụ Yoga miễn phí</p>
+                            <p><i class="fas fa-check"></i> Giáo viên chuyên nghiệp</p>
+                            <p><i class="fas fa-check"></i> Không gian yên tĩnh</p>
+                        </div>
+                        <div class="package-price">
+                            <span class="price">699.000đ</span>
+                            <span class="period">/tháng</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-block">Đăng ký ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Suggestions -->
+    <section class="training-suggestions">
+        <div class="container">
+            <div class="section-header">
+                <h2>Gợi ý tập luyện</h2>
+                <p>Lựa chọn mục tiêu tập luyện phù hợp với nhu cầu của bạn</p>
+            </div>
+            
+            <div class="suggestions-grid">
+                <!-- Suggestion 1 -->
+                <a href="#" class="suggestion-card">
+                    <div class="suggestion-icon">
+                        <i class="fas fa-weight-scale"></i>
+                    </div>
+                    <h3>Giảm cân</h3>
+                    <p>Chương trình đốt mỡ hiệu quả</p>
+                </a>
+                
+                <!-- Suggestion 2 -->
+                <a href="#" class="suggestion-card">
+                    <div class="suggestion-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Tăng cơ</h3>
+                    <p>Xây dựng cơ bắp chắc khỏe</p>
+                </a>
+                
+                <!-- Suggestion 3 -->
+                <a href="#" class="suggestion-card">
+                    <div class="suggestion-icon">
+                        <i class="fas fa-hands-praying"></i>
+                    </div>
+                    <h3>Yoga</h3>
+                    <p>Cân bằng thân - tâm - trí</p>
+                </a>
+                
+                <!-- Suggestion 4 -->
+                <a href="#" class="suggestion-card">
+                    <div class="suggestion-icon">
+                        <i class="fas fa-heart-pulse"></i>
+                    </div>
+                    <h3>Cardio</h3>
+                    <p>Nâng cao sức khỏe tim mạch</p>
+                </a>
+                
+                <!-- Suggestion 5 -->
+                <a href="#" class="suggestion-card">
+                    <div class="suggestion-icon">
+                        <i class="fas fa-person-running"></i>
+                    </div>
+                    <h3>HIIT</h3>
+                    <p>Luyện tập cường độ cao</p>
+                </a>
+                
+                <!-- Suggestion 6 -->
+                <a href="#" class="suggestion-card">
+                    <div class="suggestion-icon">
+                        <i class="fas fa-mitten"></i>
+                    </div>
+                    <h3>Kickboxing</h3>
+                    <p>Rèn luyện sức mạnh và phản xạ</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.png" alt="Online Gym Logo">
+                        <span>Online Gym</span>
+                    </div>
+                    <p>Hệ thống quản lý phòng tập trực tuyến giúp bạn dễ dàng đặt lịch, theo dõi tiến độ và đạt được mục tiêu tập luyện.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Liên kết nhanh</h3>
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Lớp học</a></li>
+                        <li><a href="#">Huấn luyện viên</a></li>
+                        <li><a href="#">Gói tập</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Trợ giúp</h3>
+                    <ul>
+                        <li><a href="#">Hướng dẫn đặt lịch</a></li>
+                        <li><a href="#">Câu hỏi thường gặp</a></li>
+                        <li><a href="#">Chính sách hoàn tiền</a></li>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Liên hệ</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Nguyễn Văn Linh, Quận 7, TP.HCM</li>
+                        <li><i class="fas fa-phone"></i> 1900 1234</li>
+                        <li><i class="fas fa-envelope"></i> info@onlinegym.vn</li>
+                    </ul>
+                    <div class="app-download">
+                        <p>Tải ứng dụng</p>
+                        <div class="app-buttons">
+                            <a href="#"><img src="assets/images/app-store.png" alt="App Store"></a>
+                            <a href="#"><img src="assets/images/google-play.png" alt="Google Play"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Online Gym - Hệ thống quản lý phòng tập trực tuyến. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html> 

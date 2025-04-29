@@ -1,0 +1,169 @@
+<!-- Modal thư viện ảnh -->
+<div class="photo-gallery-modal">
+    <div class="modal-container">
+        <button class="modal-close"><i class="fas fa-times"></i></button>
+        
+        <div class="gallery-main">
+            <img id="gallery-main-image" src="assets/images/gym-1.jpg" alt="California Fitness & Yoga">
+            <button class="gallery-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="gallery-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        
+        <div class="gallery-info">
+            <div class="gallery-title">California Fitness & Yoga</div>
+            <div class="gallery-counter">1/12</div>
+        </div>
+        
+        <div class="gallery-thumbnails">
+            <!-- Ảnh thumbnail sẽ được thêm tự động từ JavaScript -->
+        </div>
+    </div>
+</div>
+
+<style>
+    .photo-gallery-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1000;
+    }
+    
+    .modal-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    
+    .modal-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 1010;
+    }
+    
+    .gallery-main {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    
+    #gallery-main-image {
+        max-width: 100%;
+        max-height: calc(100vh - 200px);
+        object-fit: contain;
+    }
+    
+    .gallery-prev,
+    .gallery-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .gallery-prev:hover,
+    .gallery-next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .gallery-prev {
+        left: 20px;
+    }
+    
+    .gallery-next {
+        right: 20px;
+    }
+    
+    .gallery-info {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        margin-bottom: 20px;
+    }
+    
+    .gallery-title {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .gallery-counter {
+        font-size: 16px;
+    }
+    
+    .gallery-thumbnails {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        padding-bottom: 15px;
+    }
+    
+    .gallery-thumbnail {
+        width: 100px;
+        height: 70px;
+        cursor: pointer;
+        border: 2px solid transparent;
+        opacity: 0.7;
+        transition: all 0.3s;
+    }
+    
+    .gallery-thumbnail:hover {
+        opacity: 1;
+    }
+    
+    .gallery-thumbnail.active {
+        border-color: var(--primary-color);
+        opacity: 1;
+    }
+    
+    .gallery-thumbnail img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    @media (max-width: 768px) {
+        .modal-container {
+            padding: 15px;
+        }
+        
+        #gallery-main-image {
+            max-height: calc(100vh - 180px);
+        }
+        
+        .gallery-prev,
+        .gallery-next {
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+        }
+        
+        .gallery-thumbnail {
+            width: 80px;
+            height: 60px;
+        }
+    }
+</style> 
