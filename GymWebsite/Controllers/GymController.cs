@@ -4,7 +4,7 @@ using GymWebsite.Services;
 
 namespace GymWebsite.Controllers
 {
-    public class GymController : Controller
+    public class GymController : BaseController
     {
         public ActionResult Index()
         {

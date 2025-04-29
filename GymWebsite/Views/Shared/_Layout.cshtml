@@ -1,4 +1,12 @@
-﻿<!DOCTYPE html>
+﻿@using GymWebsite.Data
+@using System.Linq
+@{
+    // Lấy thông tin người dùng từ BaseController
+    bool isAuth = ViewBag.IsAuthenticated ?? false;
+    var currentUser = ViewBag.CurrentUser as GymWebsite.Models.User;
+    string avatarUrl = ViewBag.AvatarUrl as string;
+}
+<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8" />
@@ -8,17 +16,15 @@
     <link href="~/Content/custom-style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link href="~/Content/Trainer.css" rel="stylesheet" />
-
 </head>
 <body>
-    <!-- HEADER -->
     <header>
         <div class="top-nav">
             <div class="main-nav">
-                <a href="@Url.Action("Index", "Home")" class="nav-item">Trang chủ</a>
-                <a href="@Url.Action("Index", "Gym")" class="nav-item">Địa điểm phòng gym</a>
-                <a href="@Url.Action("Schedule", "Home")" class="nav-item">Lịch tập</a>
-                <a href="@Url.Action("Packages", "Home")" class="nav-item">Gói tập</a>
+                <a href="@Url.Action("Index","Home")" class="nav-item">Trang chủ</a>
+                <a href="@Url.Action("Index","Gym")" class="nav-item">Địa điểm phòng gym</a>
+                <a href="@Url.Action("Schedule","Home")" class="nav-item">Lịch tập</a>
+                <a href="@Url.Action("Packages","Home")" class="nav-item">Gói tập</a>
                 <div class="dropdown">
                     <a href="#" class="nav-item">Huấn luyện viên</a>
                     <div class="dropdown-content">
@@ -27,7 +33,6 @@
                         <a href="@Url.Action("PersonalTrainers","Home")">Cá nhân</a>
                     </div>
                 </div>
-
                 <div class="dropdown">
                     <button class="language-btn">Ngôn ngữ</button>
                     <div class="dropdown-content">
@@ -43,23 +48,34 @@
                 <a href="#">Liên hệ</a>
                 <p>Khám phá các gói tập hấp dẫn nhất</p>
             </div>
-            <div class="user-nav-item">
-                <a href="#">Đăng ký</a>
-                <p>Trải nghiệm thành viên ngay hôm nay</p>
-            </div>
-            <div class="user-nav-item">
-                <a href="#">Đăng nhập</a>
-                <p>Quản lý tài khoản của bạn</p>
-            </div>
+            @*phần này kiểu khi chạy chương trình nó ở trạng thái chưa đăng nhập, khi đó layout ở trạng thái chưa đăng nhập sau khi đăng nhập nó sẽ ở trạng thái đã đăng nhập và thay đỏi vài thứ*@
+            @if (!isAuth)
+            {
+
+                <div class="user-nav-item">
+                    <a href="#" class="nav-item" data-bs-toggle="modal" data-bs-target="#registerModal">Đăng ký</a>
+                    <p>Trải nghiệm thành viên ngay hôm nay</p>
+                </div>
+                <div class="user-nav-item">
+                    <a href="#" class="nav-item" data-bs-toggle="modal" data-bs-target="#loginModal">Đăng nhập</a>
+                    <p>Quản lý tài khoản của bạn</p>
+                </div>
+            }
+            else
+            {
+                <div class="user-nav-item logged-in">
+                    <img src="@avatarUrl" alt="Avatar" class="avatar" />
+                    <span class="username">@currentUser.FullName</span>
+                    @* sau này code log out sau. tui chỉnh tạm trong Global.asax để nó thoát đăng nhập trước đó mỗi lần chạy lại chương trình *@
+                </div>
+            }
+
             <div class="user-nav-item">
                 <a href="#">Tìm kiếm</a>
                 <p>Tìm phòng tập gần bạn</p>
             </div>
         </div>
     </header>
-
-
-    <!-- MAIN CONTENT:  -->
     <main>
         @RenderBody()
     </main>
@@ -93,7 +109,41 @@
         </div>
     </footer>
 
-    <script src="~/Scripts/popper.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!-- Modal Đăng ký -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Đăng ký thành viên</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+                </div>
+                <div class="modal-body">
+                    @Html.Partial("_RegisterPartial")
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Đăng nhập -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.appSettings = {
+            loginUrl: '@Url.Action("Login","Login")',
+            captchaUrl: '@Url.Action("CaptchaImage","Login")'
+        };
+    </script>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="@Url.Content("~/Scripts/login.js")"></script>
+
+    @RenderSection("scripts", required: false)
 </body>
 </html>

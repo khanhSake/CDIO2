@@ -1,0 +1,73 @@
+﻿@model GymWebsite.Models.RegisterModel
+
+<div class="modal-header">
+    <h5 class="modal-title">Đăng ký tài khoản</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+</div>
+
+<div class="modal-body">
+    @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @id = "formRegister" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Username)
+            @Html.TextBoxFor(m => m.Username, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Username)
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Password)
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Password)
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.ConfirmPassword)
+            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.ConfirmPassword)
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Email)
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", type = "email" })
+            @Html.ValidationMessageFor(m => m.Email)
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.FullName)
+            @Html.TextBoxFor(m => m.FullName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.FullName)
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.PhoneNumber)
+            @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control", type = "tel" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Address)
+            @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col">
+                @Html.LabelFor(m => m.DateOfBirth)
+                @Html.TextBoxFor(m => m.DateOfBirth, "{0:yyyy-MM-dd}", new { @type = "date", @class = "form-control" })
+            </div>
+            <div class="form-group col">
+                @Html.LabelFor(m => m.Gender)
+                @Html.DropDownListFor(m => m.Gender,
+                    new SelectList(new[] {
+                        new { Value="", Text="Chọn giới tính" },
+                        new { Value="Nam", Text="Nam" },
+                        new { Value="Nữ", Text="Nữ" },
+                        new { Value="Khác", Text="Khác" }
+                    }, "Value", "Text"),
+                    new { @class = "form-control" })
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">Đăng ký</button>
+    }
+</div>

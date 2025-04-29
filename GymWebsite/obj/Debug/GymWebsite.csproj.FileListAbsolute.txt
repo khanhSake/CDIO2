@@ -235,6 +235,8 @@ E:\Computer Sicence\CDIO2-main\CDIO2-main\GymWebsite\GymWebsite\obj\Debug\GymWeb
 E:\Computer Sicence\CDIO2-main\CDIO2-main\GymWebsite\GymWebsite\obj\Debug\GymWebsite.csproj.Up2Date
 E:\Computer Sicence\CDIO2-main\CDIO2-main\GymWebsite\GymWebsite\obj\Debug\GymWebsite.dll
 E:\Computer Sicence\CDIO2-main\CDIO2-main\GymWebsite\GymWebsite\obj\Debug\GymWebsite.pdb
+C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\obj\Debug\GymWebsite.csproj.AssemblyReference.cache
+C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\obj\Debug\GymWebsite.csproj.CoreCompileInputs.cache
 C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\GymWebsite.dll.config
 C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\GymWebsite.dll
 C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\GymWebsite.pdb
@@ -288,9 +290,16 @@ C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\roslyn\vbc.rsp
 C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\roslyn\VBCSCompiler.exe
 C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\Antlr3.Runtime.dll
+C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\BCrypt.Net-Next.dll
+C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\EntityFramework.dll
+C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\EntityFramework.SqlServer.dll
 C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\Newtonsoft.Json.dll
+C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\System.Buffers.dll
+C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\System.Memory.dll
+C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\System.Numerics.Vectors.dll
+C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\System.Web.Helpers.dll
 C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\System.Web.Mvc.dll
 C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\System.Web.Optimization.dll
@@ -299,6 +308,13 @@ C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\System.Web.WebPages.
 C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\System.Web.WebPages.dll
 C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\System.Web.WebPages.Razor.dll
 C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\WebGrease.dll
+C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\BCrypt.Net-Next.xml
+C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\EntityFramework.xml
+C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\EntityFramework.SqlServer.xml
+C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\System.Buffers.xml
+C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\System.Memory.xml
+C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\System.Numerics.Vectors.xml
+C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\System.Web.Helpers.xml
 C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\System.Web.Mvc.xml
 C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\System.Web.Optimization.xml
@@ -309,8 +325,6 @@ C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\System.Web.WebPages.
 C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\Newtonsoft.Json.xml
 C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\Antlr3.Runtime.pdb
 C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\obj\Debug\GymWebsite.csproj.AssemblyReference.cache
-C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\obj\Debug\GymWebsite.csproj.CoreCompileInputs.cache
 C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\obj\Debug\GymWebsite.csproj.Up2Date
 C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\obj\Debug\GymWebsite.dll
 C:\Users\MSI\OneDrive\Documents\GitHub\CDIO2\GymWebsite\obj\Debug\GymWebsite.pdb

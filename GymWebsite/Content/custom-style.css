@@ -480,3 +480,33 @@ footer {
     padding-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+/* Khi user đã đăng nhập */
+.user-nav-item.logged-in {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 30px;
+}
+
+    .user-nav-item.logged-in .avatar {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .user-nav-item.logged-in .username {
+        color: white;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .user-nav-item.logged-in .logout {
+        color: #ffcc00;
+        margin-left: 15px;
+        font-size: 13px;
+    }
+
+        .user-nav-item.logged-in .logout:hover {
+            text-decoration: underline;
+        }

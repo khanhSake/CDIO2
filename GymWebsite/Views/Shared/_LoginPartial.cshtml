@@ -1,0 +1,66 @@
+﻿@model GymWebsite.Models.LoginModel
+
+<div class="modal-header">
+    <h5 class="modal-title">Đăng nhập</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+</div>
+<div class="modal-body">
+    <div id="loginError" class="text-danger mb-2"></div>
+    @using (Html.BeginForm("Login", "Login", FormMethod.Post, new { id = "loginForm" }))
+    {
+        @Html.AntiForgeryToken()
+        <div class="mb-3">
+            @Html.LabelFor(m => m.UserName)
+            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", placeholder = "Nhập tên đăng nhập" })
+            @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })
+        </div>
+        <div class="mb-3">
+            @Html.LabelFor(m => m.Password)
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Nhập mật khẩu" })
+            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Captcha</label>
+            <div class="d-flex align-items-center">
+                <input type="text" name="Captcha" class="form-control me-2" placeholder="Nhập Captcha" />
+                <img id="captchaImage" src="@Url.Action("CaptchaImage","Login")"
+                     alt="Captcha" title="Nhấp để làm mới" style="cursor:pointer;width:100px;height:35px;" />
+            </div>
+            @Html.ValidationMessageFor(m => m.Captcha, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-check mb-3">
+            @Html.CheckBoxFor(m => m.RememberMe, new { @class = "form-check-input", id = "rememberMe" })
+            <label class="form-check-label" for="rememberMe">Nhớ mật khẩu</label>
+        </div>
+    }
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-primary w-100" id="btnLogin">Đăng nhập</button>
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+</div>
+
+<script src="~/Scripts/jquery-3.7.0.min.js"></script>  @* đảm bảo jQuery đã load *@
+<script>
+  // Làm mới Captcha khi modal mở hoặc khi click ảnh
+  $('#loginModal').on('shown.bs.modal', () => {
+    $('#captchaImage').attr('src', '@Url.Action("CaptchaImage","Login")?' + new Date().getTime());
+  });
+  $('#captchaImage').click(function(){
+    $(this).attr('src', '@Url.Action("CaptchaImage","Login")?' + new Date().getTime());
+  });
+
+  $('#btnLogin').click(e => {
+    e.preventDefault();
+    var data = $('#loginForm').serialize();
+    $.post('@Url.Action("Login","Login")', data, res => {
+      if (res.success) {
+        $('#loginModal').modal('hide');
+        location.reload();
+      } else {
+        $('#loginError').text(res.message);
+        // làm mới captcha nếu lỗi
+        $('#captchaImage').click();
+      }
+    });
+  });
+</script>
