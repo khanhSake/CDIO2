@@ -71,3 +71,4 @@ public partial class User
     [InverseProperty("User")]
     public virtual ICollection<Trainer> Trainers { get; set; } = new List<Trainer>();
 }
+        

@@ -1,0 +1,2 @@
+wwwroot\css\account.css
+wwwroot\js\register.js

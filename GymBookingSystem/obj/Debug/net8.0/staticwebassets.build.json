@@ -1,12 +1,228 @@
 {
   "Version": 1,
-  "Hash": "8QzvC5qCoDl9jhp+vM1m4P1tFBotvwNbZ/k8thdEghg=",
+  "Hash": "qB39Ez3HFhkT/uZhi3rwkcN8MlgufXtoKSd3AUO9GGQ=",
   "Source": "GymBookingSystem",
   "BasePath": "_content/GymBookingSystem",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "GymBookingSystem\\wwwroot",
+      "Source": "GymBookingSystem",
+      "ContentRoot": "C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymBookingSystem\\wwwroot\\",
+      "BasePath": "_content/GymBookingSystem",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymBookingSystem\\wwwroot\\css\\account.css",
+      "SourceId": "GymBookingSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymBookingSystem\\wwwroot\\",
+      "BasePath": "_content/GymBookingSystem",
+      "RelativePath": "css/account#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "n6drb0meka",
+      "Integrity": "f0bsRrDr1ow/irwR6wSOxEeTsgSljpTlSuK1EJISppw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\account.css"
+    },
+    {
+      "Identity": "C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymBookingSystem\\wwwroot\\js\\register.js",
+      "SourceId": "GymBookingSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymBookingSystem\\wwwroot\\",
+      "BasePath": "_content/GymBookingSystem",
+      "RelativePath": "js/register#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ttkv5fxgeo",
+      "Integrity": "z7N2wlp8yRHw4RkyXykPRb8ZahCyqN7/z4wDMXj7EwA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\register.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "css/account.css",
+      "AssetFile": "C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymBookingSystem\\wwwroot\\css\\account.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "631"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f0bsRrDr1ow/irwR6wSOxEeTsgSljpTlSuK1EJISppw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 10 May 2025 04:23:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-f0bsRrDr1ow/irwR6wSOxEeTsgSljpTlSuK1EJISppw="
+        }
+      ]
+    },
+    {
+      "Route": "css/account.n6drb0meka.css",
+      "AssetFile": "C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymBookingSystem\\wwwroot\\css\\account.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "631"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f0bsRrDr1ow/irwR6wSOxEeTsgSljpTlSuK1EJISppw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 10 May 2025 04:23:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n6drb0meka"
+        },
+        {
+          "Name": "label",
+          "Value": "css/account.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-f0bsRrDr1ow/irwR6wSOxEeTsgSljpTlSuK1EJISppw="
+        }
+      ]
+    },
+    {
+      "Route": "js/register.js",
+      "AssetFile": "C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymBookingSystem\\wwwroot\\js\\register.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "393"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z7N2wlp8yRHw4RkyXykPRb8ZahCyqN7/z4wDMXj7EwA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 10 May 2025 04:23:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z7N2wlp8yRHw4RkyXykPRb8ZahCyqN7/z4wDMXj7EwA="
+        }
+      ]
+    },
+    {
+      "Route": "js/register.ttkv5fxgeo.js",
+      "AssetFile": "C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymBookingSystem\\wwwroot\\js\\register.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "393"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z7N2wlp8yRHw4RkyXykPRb8ZahCyqN7/z4wDMXj7EwA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 10 May 2025 04:23:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ttkv5fxgeo"
+        },
+        {
+          "Name": "label",
+          "Value": "js/register.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z7N2wlp8yRHw4RkyXykPRb8ZahCyqN7/z4wDMXj7EwA="
+        }
+      ]
+    }
+  ]
 }

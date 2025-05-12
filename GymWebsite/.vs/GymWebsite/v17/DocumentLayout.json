@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymWebsite\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3A251359-B737-4EAD-8D89-CF8AAA02857F}|GymWebsite\\GymWebsite.csproj|C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymWebsite\\GymWebsite\\Views\\Home\\Trainers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3A251359-B737-4EAD-8D89-CF8AAA02857F}|GymWebsite\\GymWebsite.csproj|solutionrelative:GymWebsite\\Views\\Home\\Trainers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3A251359-B737-4EAD-8D89-CF8AAA02857F}|GymWebsite\\GymWebsite.csproj|c:\\users\\msi\\onedrive\\documents\\github\\cdio2\\gymwebsite\\gymwebsite\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A251359-B737-4EAD-8D89-CF8AAA02857F}|GymWebsite\\GymWebsite.csproj|solutionrelative:gymwebsite\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A251359-B737-4EAD-8D89-CF8AAA02857F}|GymWebsite\\GymWebsite.csproj|C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymWebsite\\gymwebsite\\views\\home\\trainers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A251359-B737-4EAD-8D89-CF8AAA02857F}|GymWebsite\\GymWebsite.csproj|solutionrelative:gymwebsite\\views\\home\\trainers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A251359-B737-4EAD-8D89-CF8AAA02857F}|GymWebsite\\GymWebsite.csproj|C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymWebsite\\GymWebsite\\Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3A251359-B737-4EAD-8D89-CF8AAA02857F}|GymWebsite\\GymWebsite.csproj|C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymWebsite\\GymWebsite\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A251359-B737-4EAD-8D89-CF8AAA02857F}|GymWebsite\\GymWebsite.csproj|solutionrelative:GymWebsite\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A251359-B737-4EAD-8D89-CF8AAA02857F}|GymWebsite\\GymWebsite.csproj|c:\\users\\msi\\onedrive\\documents\\github\\cdio2\\gymwebsite\\gymwebsite\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A251359-B737-4EAD-8D89-CF8AAA02857F}|GymWebsite\\GymWebsite.csproj|solutionrelative:gymwebsite\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A251359-B737-4EAD-8D89-CF8AAA02857F}|GymWebsite\\GymWebsite.csproj|C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymWebsite\\gymwebsite\\models\\gym.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -93,14 +93,18 @@
               "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "DataService.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymWebsite\\GymWebsite\\Services\\DataService.cs",
               "RelativeDocumentMoniker": "GymWebsite\\Services\\DataService.cs",
               "ToolTip": "C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymWebsite\\GymWebsite\\Services\\DataService.cs",
               "RelativeToolTip": "GymWebsite\\Services\\DataService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T03:35:40.971Z",
               "EditorCaption": ""
@@ -119,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymWebsite\\GymWebsite\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "GymWebsite\\Views\\Home\\Index.cshtml",
@@ -127,8 +131,7 @@
               "RelativeToolTip": "GymWebsite\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-14T05:48:47.42Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T05:48:47.42Z"
             },
             {
               "$type": "Document",
@@ -144,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Trainers.cshtml",
               "DocumentMoniker": "C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymWebsite\\GymWebsite\\Views\\Home\\Trainers.cshtml",
               "RelativeDocumentMoniker": "GymWebsite\\Views\\Home\\Trainers.cshtml",
@@ -152,8 +155,7 @@
               "RelativeToolTip": "GymWebsite\\Views\\Home\\Trainers.cshtml",
               "ViewState": "AgIAABoAAAAAAAAAAAAAwDsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-18T00:13:53.048Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-18T00:13:53.048Z"
             },
             {
               "$type": "Document",
@@ -181,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymWebsite\\GymWebsite\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "GymWebsite\\Controllers\\HomeController.cs",
@@ -189,12 +191,7 @@
               "RelativeToolTip": "GymWebsite\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAPQAAAAAAAAAAAAAAPQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T00:25:59.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+              "WhenOpened": "2025-04-18T00:25:59.423Z"
             },
             {
               "$type": "Document",
@@ -303,6 +300,28 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2025-04-14T05:47:22.544Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             }
           ]
         }
