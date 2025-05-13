@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qB39Ez3HFhkT/uZhi3rwkcN8MlgufXtoKSd3AUO9GGQ=",
+  "Hash": "TOggtlHWu6KHV4kNd/Rep6R+DNjd9NRZrJvRQcanwWo=",
   "Source": "GymBookingSystem",
   "BasePath": "_content/GymBookingSystem",
   "Mode": "Default",
@@ -36,6 +36,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\account.css"
+    },
+    {
+      "Identity": "C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymBookingSystem\\wwwroot\\css\\trainer.css",
+      "SourceId": "GymBookingSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymBookingSystem\\wwwroot\\",
+      "BasePath": "_content/GymBookingSystem",
+      "RelativePath": "css/trainer#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "59322snder",
+      "Integrity": "B6HTwK6WHsag9VO586YZtXlypMdzt+CjbOePpzENeAY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\trainer.css"
     },
     {
       "Identity": "C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymBookingSystem\\wwwroot\\js\\register.js",
@@ -139,6 +160,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-f0bsRrDr1ow/irwR6wSOxEeTsgSljpTlSuK1EJISppw="
+        }
+      ]
+    },
+    {
+      "Route": "css/trainer.59322snder.css",
+      "AssetFile": "C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymBookingSystem\\wwwroot\\css\\trainer.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2665"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B6HTwK6WHsag9VO586YZtXlypMdzt+CjbOePpzENeAY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 06:38:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "59322snder"
+        },
+        {
+          "Name": "label",
+          "Value": "css/trainer.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-B6HTwK6WHsag9VO586YZtXlypMdzt+CjbOePpzENeAY="
+        }
+      ]
+    },
+    {
+      "Route": "css/trainer.css",
+      "AssetFile": "C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymBookingSystem\\wwwroot\\css\\trainer.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2665"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B6HTwK6WHsag9VO586YZtXlypMdzt+CjbOePpzENeAY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 06:38:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-B6HTwK6WHsag9VO586YZtXlypMdzt+CjbOePpzENeAY="
         }
       ]
     },

@@ -12,6 +12,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"n6drb0meka"},{"Name":"integrity","Value":"sha256-f0bsRrDr1ow/irwR6wSOxEeTsgSljpTlSuK1EJISppw="},{"Name":"label","Value":"_content/GymBookingSystem/css/account.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"631"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022f0bsRrDr1ow/irwR6wSOxEeTsgSljpTlSuK1EJISppw=\u0022"},{"Name":"Last-Modified","Value":"Sat, 10 May 2025 04:23:55 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/GymBookingSystem/css/trainer.59322snder.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\trainer.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"59322snder"},{"Name":"integrity","Value":"sha256-B6HTwK6WHsag9VO586YZtXlypMdzt\u002BCjbOePpzENeAY="},{"Name":"label","Value":"_content/GymBookingSystem/css/trainer.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2665"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022B6HTwK6WHsag9VO586YZtXlypMdzt\u002BCjbOePpzENeAY=\u0022"},{"Name":"Last-Modified","Value":"Mon, 12 May 2025 06:38:08 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/GymBookingSystem/css/trainer.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\trainer.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-B6HTwK6WHsag9VO586YZtXlypMdzt\u002BCjbOePpzENeAY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2665"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022B6HTwK6WHsag9VO586YZtXlypMdzt\u002BCjbOePpzENeAY=\u0022"},{"Name":"Last-Modified","Value":"Mon, 12 May 2025 06:38:08 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/GymBookingSystem/js/register.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\register.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

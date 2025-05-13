@@ -1,0 +1,41 @@
+﻿@model IEnumerable<GymBookingSystem.Dtos.StudentDto>
+@{
+    ViewData["Title"] = "Danh sách học viên";
+    Layout = "_TrainerLayout";
+}
+<link href="~/css/trainer.css" rel="stylesheet" />
+
+<h2 class="mb-4">@ViewData["Title"]</h2>
+
+<div class="card">
+
+    <div class="card-body p-0">
+        <table class="table table-hover mb-0">
+            <thead>
+                <tr>
+                    <th>Họ và tên</th>
+                    <th>Email</th>
+                    <th class="text-end">Số lớp đã đặt</th>
+                    <th class="text-end">Buổi tập cá nhân</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var u in Model)
+                {
+                    <tr>
+                        <td>@u.FullName</td>
+                        <td>@u.Email</td>
+                        <td class="text-end">@u.ClassesBooked</td>
+                        <td class="text-end">@u.PtSessionsBooked</td>
+                        <td>
+                            <a asp-action="Progress" asp-route-id="@u.UserId" class="btn btn-sm btn-outline-primary">
+                                Xem tiến trình
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

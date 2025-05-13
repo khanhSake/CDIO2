@@ -1,0 +1,38 @@
+﻿@model IEnumerable<GymBookingSystem.Dtos.TrainerPtSessionDto>
+@{
+    ViewData["Title"] = "Buổi tập cá nhân";
+    Layout = "_TrainerLayout";
+}
+<link href="~/css/trainer.css" rel="stylesheet" />
+
+<h2 class="mb-4">@ViewData["Title"]</h2>
+
+<div class="card">
+    <div class="card-body p-0">
+        <table class="table table-hover mb-0">
+            <thead>
+                <tr>
+                    <th>Mã buổi</th>
+                    <th>Ngày</th>
+                    <th>Giờ</th>
+                    <th>Khách</th>
+                    <th class="text-end">Tổng tiền</th>
+                    <th>Trạng thái</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var p in Model)
+                {
+                    <tr>
+                        <td>@p.SessionId</td>
+                        <td>@p.SessionDate.ToString("yyyy-MM-dd")</td>
+                        <td>@($"{p.StartTime:hh\\:mm} - {p.EndTime:hh\\:mm}")</td>
+                        <td>@p.ClientEmail</td>
+                        <td class="text-end">@p.TotalAmount.ToString("C0")</td>
+                        <td>@p.Status</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

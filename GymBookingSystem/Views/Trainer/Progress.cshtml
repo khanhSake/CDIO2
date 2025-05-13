@@ -1,0 +1,36 @@
+﻿@model IEnumerable<GymBookingSystem.Dtos.StudentProgressDto>
+@{
+    ViewData["Title"] = "Tiến trình học viên: " + (ViewBag.StudentName ?? "");
+    Layout = "_TrainerLayout";
+}
+<link href="~/css/trainer.css" rel="stylesheet" />
+
+<h2 class="mb-4">@ViewData["Title"]</h2>
+
+<div class="card">
+    <div class="card-body p-0">
+        <table class="table table-hover mb-0">
+            <thead>
+                <tr>
+                    <th>Dịch vụ</th>
+                    <th>Ngày đánh giá</th>
+                    <th>Trạng thái duyệt</th>
+                    <th>Điểm</th>
+                    <th>Bình luận</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var r in Model)
+                {
+                    <tr>
+                        <td>@r.ClassName</td>
+                        <td>@r.BookingDate?.ToString("yyyy-MM-dd HH:mm")</td>
+                        <td>@r.Status</td>
+                        <td>@r.Rating</td>
+                        <td>@r.Comment</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

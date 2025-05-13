@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\css\\account.css"
     },
     {
+      "Id": "C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymBookingSystem\\wwwroot\\css\\trainer.css",
+      "PackagePath": "staticwebassets\\css\\trainer.css"
+    },
+    {
       "Id": "C:\\Users\\MSI\\OneDrive\\Documents\\GitHub\\CDIO2\\GymBookingSystem\\wwwroot\\js\\register.js",
       "PackagePath": "staticwebassets\\js\\register.js"
     },

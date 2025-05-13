@@ -85,6 +85,88 @@
       ]
     },
     {
+      "Route": "css/trainer.59322snder.css",
+      "AssetFile": "css/trainer.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2665"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B6HTwK6WHsag9VO586YZtXlypMdzt+CjbOePpzENeAY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 06:38:08 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "59322snder"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-B6HTwK6WHsag9VO586YZtXlypMdzt+CjbOePpzENeAY="
+        },
+        {
+          "Name": "label",
+          "Value": "css/trainer.css"
+        }
+      ]
+    },
+    {
+      "Route": "css/trainer.css",
+      "AssetFile": "css/trainer.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2665"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B6HTwK6WHsag9VO586YZtXlypMdzt+CjbOePpzENeAY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 06:38:08 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-B6HTwK6WHsag9VO586YZtXlypMdzt+CjbOePpzENeAY="
+        }
+      ]
+    },
+    {
       "Route": "js/register.js",
       "AssetFile": "js/register.js",
       "Selectors": [],

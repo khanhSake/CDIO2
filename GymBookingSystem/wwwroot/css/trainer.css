@@ -1,0 +1,118 @@
+﻿:root {
+    --font-body: 'Poppins', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+    --color-primary: #0066cc;
+    --color-primary-light: #338fcc;
+    --color-bg: #f4f8fc;
+    --color-table-header: #005bb5;
+    --spacing-unit: 1rem;
+    --border-radius: 0.75rem;
+    --box-shadow: 0 4px 20px rgba(0, 102, 204, 0.15);
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-unit);
+    color: var(--color-primary);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--color-primary) !important;
+}
+
+    .navbar .navbar-brand,
+    .navbar .nav-link {
+        color: #fff !important;
+        font-weight: 500;
+        margin-right: var(--spacing-unit);
+    }
+
+        .navbar .nav-link:hover,
+        .navbar .nav-link.active {
+            color: var(--color-bg) !important;
+        }
+
+/* Card styling */
+.card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: var(--spacing-unit);
+    overflow: hidden;
+}
+
+/* Container padding */
+.container {
+    padding-top: var(--spacing-unit);
+    padding-bottom: var(--spacing-unit);
+}
+
+/* Table responsive wrapper */
+.table-responsive {
+    margin-bottom: var(--spacing-unit);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse; /* bỏ border-spacing */
+}
+
+    .table thead th {
+        background-color: var(--color-primary);
+        color: #fff;
+        font-weight: 600;
+        padding: 0.75rem 1rem;
+        text-align: left;
+        border-bottom: none;
+    }
+
+    .table tbody td {
+        background-color: #fff;
+        padding: 0.75rem 1rem;
+        vertical-align: middle;
+        border-top: 1px solid rgba(0,0,0,0.075);
+    }
+
+.table-hover tbody tr:hover td {
+    background-color: rgba(0, 102, 204, 0.05);
+}
+/* Button */
+.btn-outline-primary {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+    border-radius: var(--border-radius);
+    padding: 0.375rem 0.75rem;
+}
+
+    .btn-outline-primary:hover {
+        background-color: var(--color-primary-light);
+        color: #fff;
+        border-color: var(--color-primary-light);
+    }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .table-responsive {
+        overflow-x: scroll;
+    }
+
+    .navbar .nav-link {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
