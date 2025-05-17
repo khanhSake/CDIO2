@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Nhân Viên</title>
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- For icons -->
+</head>
+<body class="bg-gray-100">
+
+    <!-- Sidebar -->
+    <div class="bg-blue-800 text-white w-64 py-4 flex flex-col">
+        <div class="px-4 py-4 border-b border-blue-700">
+            <h1 class="text-2xl font-bold">Admin</h1>
+        </div>
+        <nav class="flex-1 px-2 py-4 space-y-2">
+            <a href="index.html" class="flex items-center px-4 py-3 hover:bg-blue-700 rounded-lg">
+                <i class="fas fa-tachometer-alt mr-3"></i> Dashboard
+            </a>
+            <a href="users.html" class="flex items-center px-4 py-3 hover:bg-blue-700 text-gray-300 rounded-lg">
+                <i class="fas fa-user-shield mr-3"></i> Tài khoản & Vai trò
+            </a>
+            <a href="#" class="flex items-center px-4 py-3 bg-blue-700 rounded-lg">
+                <i class="fas fa-users mr-3"></i> Nhân viên
+            </a>
+            <a href="payroll.html" class="flex items-center px-4 py-3 hover:bg-blue-700 text-gray-300 rounded-lg">
+                <i class="fas fa-money-bill-wave mr-3"></i> Bảng lương
+            </a>
+            <a href="departments.html" class="flex items-center px-4 py-3 hover:bg-blue-700 text-gray-300 rounded-lg">
+                <i class="fas fa-building mr-3"></i> Phòng ban
+            </a>
+            <a href="job_titles.html" class="flex items-center px-4 py-3 hover:bg-blue-700 text-gray-300 rounded-lg">
+                <i class="fas fa-briefcase mr-3"></i> Chức vụ
+            </a>
+            <a href="reports.html" class="flex items-center px-4 py-3 hover:bg-blue-700 text-gray-300 rounded-lg">
+                <i class="fas fa-chart-bar mr-3"></i> Báo cáo
+            </a>
+            <a href="notifications.html" class="flex items-center px-4 py-3 hover:bg-blue-700 text-gray-300 rounded-lg">
+                <i class="fas fa-bell mr-3"></i> Cảnh báo
+            </a>
+            <a href="settings.html" class="flex items-center px-4 py-3 hover:bg-blue-700 text-gray-300 rounded-lg">
+                <i class="fas fa-cogs mr-3"></i> Cài đặt Hệ thống
+            </a>
+        </nav>
+        <div class="px-4 py-4 border-t border-blue-700">
+            <a href="login.html" class="flex items-center text-gray-300 hover:text-white">
+                <i class="fas fa-sign-out-alt mr-3"></i> Đăng xuất
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1 p-6">
+        <h1 class="text-2xl font-semibold">Quản lý nhân viên</h1>
+
+        <!-- Search Form -->
+        <form id="searchForm" class="flex gap-4 mt-4">
+            <input id="searchId" type="text" class="px-4 py-2 border rounded" placeholder="Mã nhân viên">
+            <input id="searchName" type="text" class="px-4 py-2 border rounded" placeholder="Tên nhân viên">
+            <select id="searchDepartmentId" class="px-4 py-2 border rounded">
+                <!-- Options for departments will be loaded here -->
+            </select>
+            <select id="searchPositionId" class="px-4 py-2 border rounded">
+                <!-- Options for positions will be loaded here -->
+            </select>
+            <button type="submit" class="px-6 py-2 bg-blue-500 text-white rounded">Tìm kiếm</button>
+        </form>
+
+        <!-- Employee Table -->
+        <div class="mt-6">
+            <table class="min-w-full table-auto bg-white shadow rounded-md">
+                <thead>
+                    <tr>
+                        <th class="px-6 py-3 border-b">Tên nhân viên</th>
+                        <th class="px-6 py-3 border-b">Phòng ban</th>
+                        <th class="px-6 py-3 border-b">Chức vụ</th>
+                        <th class="px-6 py-3 border-b">Trạng thái</th>
+                        <th class="px-6 py-3 border-b">Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody id="employeeTableBody">
+                    <!-- Employee data will be loaded here -->
+                </tbody>
+            </table>
+
+            <!-- Pagination Info -->
+            <div class="mt-4" id="paginationInfo"></div>
+            <div class="mt-4" id="paginationNav"></div>
+        </div>
+
+        <!-- Add Employee Modal -->
+        <div id="addEmployeeModal" class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center">
+            <div class="bg-white p-6 rounded-lg w-1/3">
+                <h2 class="text-xl font-semibold mb-4">Thêm nhân viên mới</h2>
+                <form id="addEmployeeForm">
+                    <input type="hidden" id="employeeId">
+                    <div class="mb-4">
+                        <label for="fullName" class="block">Họ và tên</label>
+                        <input id="fullName" class="w-full px-4 py-2 border rounded" type="text" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="dateOfBirth" class="block">Ngày sinh</label>
+                        <input id="dateOfBirth" class="w-full px-4 py-2 border rounded" type="date" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="gender" class="block">Giới tính</label>
+                        <select id="gender" class="w-full px-4 py-2 border rounded">
+                            <option value="Male">Nam</option>
+                            <option value="Female">Nữ</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label for="phoneNumber" class="block">Số điện thoại</label>
+                        <input id="phoneNumber" class="w-full px-4 py-2 border rounded" type="text" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block">Email</label>
+                        <input id="email" class="w-full px-4 py-2 border rounded" type="email" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="departmentId" class="block">Phòng ban</label>
+                        <select id="departmentId" class="w-full px-4 py-2 border rounded"></select>
+                    </div>
+                    <div class="mb-4">
+                        <label for="positionId" class="block">Chức vụ</label>
+                        <select id="positionId" class="w-full px-4 py-2 border rounded"></select>
+                    </div>
+                    <div class="flex justify-end gap-4">
+                        <button type="button" onclick="closeAddEmployeeModal()" class="px-6 py-2 bg-gray-500 text-white rounded">Đóng</button>
+                        <button type="submit" class="px-6 py-2 bg-blue-500 text-white rounded">Thêm</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Delete Confirmation Modal -->
+        <div id="deleteModal" class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center">
+            <div class="bg-white p-6 rounded-lg w-1/3">
+                <h2 class="text-xl font-semibold mb-4">Xóa nhân viên</h2>
+                <p>Bạn có chắc chắn muốn xóa nhân viên này?</p>
+                <div class="flex justify-end gap-4 mt-4">
+                    <button onclick="closeDeleteModal()" class="px-6 py-2 bg-gray-500 text-white rounded">Hủy</button>
+                    <button id="confirmDeleteButton" class="px-6 py-2 bg-red-500 text-white rounded">Xóa</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchEmployees();
+            fetchDepartments();
+            fetchPositions();
+        });
+
+        function fetchEmployees(page = 1) {
+            fetch(`/api/employees?page=${page}`)
+                .then(response => response.json())
+                .then(data => {
+                    const employeeTableBody = document.getElementById('employeeTableBody');
+                    employeeTableBody.innerHTML = '';
+
+                    data.employees.forEach(employee => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                                    <td class="px-6 py-4 text-sm text-gray-500">${employee.name}</td>
+                                    <td class="px-6 py-4 text-sm text-gray-500">${employee.department}</td>
+                                    <td class="px-6 py-4 text-sm text-gray-500">${employee.position}</td>
+                                    <td class="px-6 py-4 text-sm text-gray-500">${employee.status}</td>
+                                    <td class="px-6 py-4 text-sm text-gray-500">
+                                        <button onclick="openDeleteModal(${employee.id})" class="text-red-600 hover:text-red-700">
+                                            <i class="fas fa-trash-alt"></i> Xóa
+                                        </button>
+                                    </td>
+                                `;
+                        employeeTableBody.appendChild(row);
+                    });
+
+                    updatePaginationInfo(data.totalCount, page);
+                })
+                .catch(error => console.error('Error fetching employees:', error));
+        }
+
+        function updatePaginationInfo(totalCount, currentPage) {
+            const paginationInfo = document.getElementById('paginationInfo');
+            paginationInfo.innerHTML = `Đang hiển thị ${currentPage * 10 - 9} đến ${Math.min(currentPage * 10, totalCount)} trong tổng số ${totalCount} kết quả`;
+
+            const paginationNav = document.getElementById('paginationNav');
+            paginationNav.innerHTML = '';
+            const totalPages = Math.ceil(totalCount / 10);
+            for (let page = 1; page <= totalPages; page++) {
+                const button = document.createElement('a');
+                button.href = '#';
+                button.classList.add('px-4', 'py-2', 'text-sm', 'font-medium', 'text-gray-700', 'bg-white', 'border', 'border-gray-300', 'rounded-md', 'hover:bg-gray-50');
+                button.textContent = page;
+                button.onclick = () => fetchEmployees(page);
+                paginationNav.appendChild(button);
+            }
+        }
+
+        function fetchDepartments() {
+            fetch('/api/departments')
+                .then(response => response.json())
+                .then(data => {
+                    const departmentSelects = [document.getElementById('searchDepartmentId'), document.getElementById('departmentId')];
+                    departmentSelects.forEach(select => {
+                        data.departments.forEach(department => {
+                            const option = document.createElement('option');
+                            option.value = department.id;
+                            option.textContent = department.name;
+                            select.appendChild(option);
+                        });
+                    });
+                })
+                .catch(error => console.error('Error fetching departments:', error));
+        }
+
+        function fetchPositions() {
+            fetch('/api/positions')
+                .then(response => response.json())
+                .then(data => {
+                    const positionSelects = [document.getElementById('searchPositionId'), document.getElementById('positionId')];
+                    positionSelects.forEach(select => {
+                        data.positions.forEach(position => {
+                            const option = document.createElement('option');
+                            option.value = position.id;
+                            option.textContent = position.name;
+                            select.appendChild(option);
+                        });
+                    });
+                })
+                .catch(error => console.error('Error fetching positions:', error));
+        }
+
+        function openAddEmployeeModal() {
+            document.getElementById('addEmployeeModal').classList.remove('hidden');
+        }
+
+        function closeAddEmployeeModal() {
+            document.getElementById('addEmployeeModal').classList.add('hidden');
+        }
+
+        document.getElementById('addEmployeeForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const employeeData = {
+                id: document.getElementById('employeeId').value,
+                name: document.getElementById('fullName').value,
+                birthdate: document.getElementById('dateOfBirth').value,
+                gender: document.getElementById('gender').value,
+                phone: document.getElementById('phoneNumber').value,
+                email: document.getElementById('email').value,
+                departmentId: document.getElementById('departmentId').value,
+                positionId: document.getElementById('positionId').value
+            };
+
+            fetch('/api/employees', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(employeeData)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert('Nhân viên đã được thêm!');
+                        fetchEmployees();
+                        closeAddEmployeeModal();
+                    } else {
+                        alert('Có lỗi xảy ra, vui lòng thử lại!');
+                    }
+                })
+                .catch(error => console.error('Error adding employee:', error));
+        });
+
+        function openDeleteModal(employeeId) {
+            document.getElementById('deleteModal').classList.remove('hidden');
+            document.getElementById('confirmDeleteButton').onclick = () => deleteEmployee(employeeId);
+        }
+
+        function closeDeleteModal() {
+            document.getElementById('deleteModal').classList.add('hidden');
+        }
+
+        function deleteEmployee(employeeId) {
+            fetch(`/api/employees/${employeeId}`, {
+                method: 'DELETE',
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert('Nhân viên đã được xóa!');
+                        fetchEmployees();
+                        closeDeleteModal();
+                    } else {
+                        alert('Có lỗi xảy ra, vui lòng thử lại!');
+                    }
+                })
+                .catch(error => console.error('Error deleting employee:', error));
+        }
+    </script>
+
+</body>
+</html>

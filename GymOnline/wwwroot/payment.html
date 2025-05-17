@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán</title>
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            THANH TOÁN
+        </div>
+        <div class="content">
+            <div class="payment-info">
+                <div class="label">Tên:</div>
+                <div class="value">Phan Văn Sinh</div>
+
+                <div class="label">Số điện thoại:</div>
+                <div class="value">0919674904</div>
+
+                <div class="label">Số tiền:</div>
+                <div class="value amount" id="totalAmount">Đang tính...</div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="qr-section">
+                <div class="qr-code">
+                    <img src="images/payment.jpg" alt="QR Code thanh toán">
+                </div>
+                <div>Quét mã QR để thanh toán</div>
+            </div>
+
+            <div class="buttons">
+                <button class="btn btn-back" onclick="goBack()">QUAY LẠI</button>
+                <button class="btn btn-confirm" onclick="confirmPayment()">XÁC NHẬN ĐÃ THANH TOÁN</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/payment.js"></script>
+</body>
+</html>

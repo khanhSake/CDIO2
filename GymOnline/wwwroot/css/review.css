@@ -1,0 +1,23 @@
+﻿#reviews-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.review-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+    .review-card p {
+        margin: 10px 0;
+    }
+
+    .review-card strong {
+        color: #333;
+    }

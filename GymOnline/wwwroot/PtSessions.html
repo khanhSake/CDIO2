@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đặt Buổi Tập Cá Nhân</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold mb-4">Đặt Buổi Tập Cá Nhân</h1>
+
+        <div class="mb-4">
+            <label class="block text-sm font-medium">Người dùng ID:</label>
+            <input type="number" id="userId" value="3" class="w-full p-2 border rounded" readonly>
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-sm font-medium">Chi nhánh:</label>
+            <input type="text" id="branchNameDisplay" class="w-full p-2 border rounded" readonly>
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-sm font-medium">Ngày tập:</label>
+            <input type="date" id="sessionDate" class="w-full p-2 border rounded" required>
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-sm font-medium">Giờ bắt đầu:</label>
+            <input type="time" id="startTime" class="w-full p-2 border rounded" required oninput="calculatePrice()">
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-sm font-medium">Giờ kết thúc:</label>
+            <input type="time" id="endTime" class="w-full p-2 border rounded" required oninput="calculatePrice()">
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-sm font-medium">Giá dự kiến (VND):</label>
+            <input type="text" id="pricePreview" class="w-full p-2 border rounded" readonly>
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-sm font-medium">Ghi chú:</label>
+            <textarea id="notes" class="w-full p-2 border rounded"></textarea>
+        </div>
+
+        <button onclick="bookPTSession()" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 w-full">Đặt Buổi Tập</button>
+    </div>
+
+    <script src="js/PtSessions.js"></script>
+</body>
+</html>

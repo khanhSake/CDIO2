@@ -1,0 +1,27 @@
+﻿@model List<DASHBOARD.Models.NhanVien>
+<h2>Danh Sách Nhân Viên</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>Mã NV</th>
+        <th>Họ Tên</th>
+        <th>Ngày Sinh</th>
+        <th>Email</th>
+        <th>Chức Vụ</th>
+        <th>Hành Động</th>
+    </tr>
+    @foreach (var nv in Model)
+    {
+        <tr>
+            <td>@nv.MaNV</td>
+            <td>@nv.HoTen</td>
+            <td>
+                @(nv.NgaySinh.HasValue ? nv.NgaySinh.Value.ToString("yyyy-MM-dd") :
+"")
+            </td>
+            <td>@nv.Email</td>
+            <td>@nv.ChucVu</td>
+            <td>@nv.PhongBan</td>
+            <td>
+        </tr>
+    }
+</table>
