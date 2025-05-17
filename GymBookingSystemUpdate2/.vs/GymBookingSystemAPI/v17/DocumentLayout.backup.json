@@ -1,0 +1,737 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\wwwroot\\provider-dashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\wwwroot\\provider-dashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\wwwroot\\js\\provider-dashboard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\wwwroot\\js\\provider-dashboard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\dtos\\updatemembershippackagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\dtos\\updatemembershippackagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\dtos\\updategymbranchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\dtos\\updategymbranchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\dtos\\updatefacilitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\dtos\\updatefacilitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\dtos\\updatebranchimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\dtos\\updatebranchimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\dtos\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\dtos\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\dtos\\membershippackagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\dtos\\membershippackagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\dtos\\gymbranchdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\dtos\\gymbranchdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\dtos\\facilitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\dtos\\facilitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\dtos\\branchimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\dtos\\branchimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\dtos\\addmembershippackagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\dtos\\addmembershippackagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\dtos\\addgymbranchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\dtos\\addgymbranchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\dtos\\addfacilitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\dtos\\addfacilitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\dtos\\addbranchimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\dtos\\addbranchimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\data\\gymbookingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\data\\gymbookingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\models\\membershippackage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\models\\membershippackage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\models\\gymprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\models\\gymprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\models\\gymbranch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\models\\gymbranch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\models\\facility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\models\\facility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\models\\branchimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\models\\branchimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\wwwroot\\js\\gym-detail.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\wwwroot\\js\\gym-detail.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\wwwroot\\js\\gyms-list.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\wwwroot\\js\\gyms-list.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\wwwroot\\gyms-list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\wwwroot\\gyms-list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\wwwroot\\gym-detail.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\wwwroot\\gym-detail.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\wwwroot\\js\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\wwwroot\\js\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\controllers\\gymbranchescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\controllers\\gymbranchescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\gymbookingsystemapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\gymbookingsystemapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\controllers\\branchimagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\controllers\\branchimagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\controllers\\membershippackagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\controllers\\membershippackagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\controllers\\powerfitnesscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\controllers\\powerfitnesscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\controllers\\facilitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\controllers\\facilitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\controller\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\controller\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\migrations\\20250426050218_updategymproviderprimarykey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\migrations\\20250426050218_updategymproviderprimarykey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|c:\\users\\dolan\\downloads\\cido2\\gymbookingsystem\\gymbookingsystemapi\\migrations\\20250426044254_updategymbranchprimarykey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60744A7-F476-46C8-91FA-F127F459DC6F}|GymBookingSystemAPI\\GymBookingSystemAPI.csproj|solutionrelative:gymbookingsystemapi\\migrations\\20250426044254_updategymbranchprimarykey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 334,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReviewDTO.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\ReviewDTO.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\DTOs\\ReviewDTO.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\ReviewDTO.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\DTOs\\ReviewDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T10:47:01.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UpdateBranchImageDTO.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\UpdateBranchImageDTO.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\DTOs\\UpdateBranchImageDTO.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\UpdateBranchImageDTO.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\DTOs\\UpdateBranchImageDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T03:56:01.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UpdateFacilityDTO.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\UpdateFacilityDTO.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\DTOs\\UpdateFacilityDTO.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\UpdateFacilityDTO.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\DTOs\\UpdateFacilityDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T03:55:21.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UpdateGymBranchDTO.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\UpdateGymBranchDTO.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\DTOs\\UpdateGymBranchDTO.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\UpdateGymBranchDTO.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\DTOs\\UpdateGymBranchDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T03:54:24.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UpdateMembershipPackageDTO.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\UpdateMembershipPackageDTO.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\DTOs\\UpdateMembershipPackageDTO.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\UpdateMembershipPackageDTO.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\DTOs\\UpdateMembershipPackageDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T03:21:31.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "provider-dashboard.js",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\wwwroot\\js\\provider-dashboard.js",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\wwwroot\\js\\provider-dashboard.js",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\wwwroot\\js\\provider-dashboard.js",
+              "RelativeToolTip": "GymBookingSystemAPI\\wwwroot\\js\\provider-dashboard.js",
+              "ViewState": "AgIAAKUCAAAAAAAAAAAYwN8CAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-03T16:30:42.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "provider-dashboard.html",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\wwwroot\\provider-dashboard.html",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\wwwroot\\provider-dashboard.html",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\wwwroot\\provider-dashboard.html",
+              "RelativeToolTip": "GymBookingSystemAPI\\wwwroot\\provider-dashboard.html",
+              "ViewState": "AgIAAHsBAAAAAAAAAAAcwLUBAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-12T12:12:05.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GymBranchDetailDTO.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\GymBranchDetailDTO.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\DTOs\\GymBranchDetailDTO.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\GymBranchDetailDTO.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\DTOs\\GymBranchDetailDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T10:44:43.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MembershipPackageDTO.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\MembershipPackageDTO.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\DTOs\\MembershipPackageDTO.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\MembershipPackageDTO.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\DTOs\\MembershipPackageDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T10:46:44.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FacilityDTO.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\FacilityDTO.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\DTOs\\FacilityDTO.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\FacilityDTO.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\DTOs\\FacilityDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T10:45:06.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BranchImageDTO.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\BranchImageDTO.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\DTOs\\BranchImageDTO.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\BranchImageDTO.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\DTOs\\BranchImageDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T10:45:35.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AddMembershipPackageDTO.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\AddMembershipPackageDTO.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\DTOs\\AddMembershipPackageDTO.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\AddMembershipPackageDTO.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\DTOs\\AddMembershipPackageDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T03:21:01.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AddGymBranchDTO.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\AddGymBranchDTO.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\DTOs\\AddGymBranchDTO.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\AddGymBranchDTO.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\DTOs\\AddGymBranchDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T07:10:35.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AddFacilityDTO.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\AddFacilityDTO.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\DTOs\\AddFacilityDTO.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\AddFacilityDTO.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\DTOs\\AddFacilityDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T03:54:57.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AddBranchImageDTO.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\AddBranchImageDTO.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\DTOs\\AddBranchImageDTO.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\DTOs\\AddBranchImageDTO.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\DTOs\\AddBranchImageDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T03:55:43.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GymBookingContext.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Data\\GymBookingContext.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\Data\\GymBookingContext.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Data\\GymBookingContext.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\Data\\GymBookingContext.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAUwGcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T10:47:42.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Models\\User.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Models\\User.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T10:44:04.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MembershipPackage.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Models\\MembershipPackage.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\Models\\MembershipPackage.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Models\\MembershipPackage.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\Models\\MembershipPackage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T10:43:07.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Review.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Models\\Review.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\Models\\Review.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Models\\Review.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\Models\\Review.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T10:43:14.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GymProvider.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Models\\GymProvider.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\Models\\GymProvider.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Models\\GymProvider.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\Models\\GymProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T10:43:50.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GymBranch.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Models\\GymBranch.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\Models\\GymBranch.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Models\\GymBranch.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\Models\\GymBranch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T10:40:05.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Facility.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Models\\Facility.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\Models\\Facility.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Models\\Facility.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\Models\\Facility.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAwA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T10:40:43.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BranchImage.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Models\\BranchImage.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\Models\\BranchImage.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Models\\BranchImage.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\Models\\BranchImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T10:42:36.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\wwwroot\\js\\index.js",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\wwwroot\\js\\index.js",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\wwwroot\\js\\index.js",
+              "RelativeToolTip": "GymBookingSystemAPI\\wwwroot\\js\\index.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-29T11:22:08.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "gyms-list.js",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\wwwroot\\js\\gyms-list.js",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\wwwroot\\js\\gyms-list.js",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\wwwroot\\js\\gyms-list.js",
+              "RelativeToolTip": "GymBookingSystemAPI\\wwwroot\\js\\gyms-list.js",
+              "ViewState": "AgIAABcAAAAAAAAAAAAUwD4AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-29T11:23:16.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "gym-detail.html",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\wwwroot\\gym-detail.html",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\wwwroot\\gym-detail.html",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\wwwroot\\gym-detail.html",
+              "RelativeToolTip": "GymBookingSystemAPI\\wwwroot\\gym-detail.html",
+              "ViewState": "AgIAAO8AAAAAAAAAAAAYwO8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-12T12:13:22.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "gym-detail.js",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\wwwroot\\js\\gym-detail.js",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\wwwroot\\js\\gym-detail.js",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\wwwroot\\js\\gym-detail.js",
+              "RelativeToolTip": "GymBookingSystemAPI\\wwwroot\\js\\gym-detail.js",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAcwLMAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-29T11:21:20.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "BranchImagesController.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Controllers\\BranchImagesController.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\Controllers\\BranchImagesController.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Controllers\\BranchImagesController.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\Controllers\\BranchImagesController.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAA2wHQAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T03:57:21.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "gyms-list.html",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\wwwroot\\gyms-list.html",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\wwwroot\\gyms-list.html",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\wwwroot\\gyms-list.html",
+              "RelativeToolTip": "GymBookingSystemAPI\\wwwroot\\gyms-list.html",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAYwHYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-12T12:13:52.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "GymBranchesController.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Controllers\\GymBranchesController.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\Controllers\\GymBranchesController.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Controllers\\GymBranchesController.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\Controllers\\GymBranchesController.cs",
+              "ViewState": "AgIAAP4AAAAAAAAAAAAcwBQBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T14:50:33.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "MembershipPackagesController.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Controllers\\MembershipPackagesController.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\Controllers\\MembershipPackagesController.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Controllers\\MembershipPackagesController.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\Controllers\\MembershipPackagesController.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAiwJgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T03:20:07.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Program.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Program.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\Program.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T05:48:23.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "GymBookingSystemAPI.http",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\GymBookingSystemAPI.http",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\GymBookingSystemAPI.http",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\GymBookingSystemAPI.http",
+              "RelativeToolTip": "GymBookingSystemAPI\\GymBookingSystemAPI.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-05-17T05:48:30.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\appsettings.json",
+              "RelativeToolTip": "GymBookingSystemAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-06T08:47:21.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ReviewsController.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Controllers\\ReviewsController.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\Controllers\\ReviewsController.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Controllers\\ReviewsController.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\Controllers\\ReviewsController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAQwF8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T03:57:43.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\wwwroot\\index.html",
+              "RelativeToolTip": "GymBookingSystemAPI\\wwwroot\\index.html",
+              "ViewState": "AgIAAHcBAAAAAAAAAAAAAH0BAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-12T12:14:17.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "PowerFitnessContext.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Controllers\\PowerFitnessContext.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\Controllers\\PowerFitnessContext.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Controllers\\PowerFitnessContext.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\Controllers\\PowerFitnessContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T18:22:28.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "FacilitiesController.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Controllers\\FacilitiesController.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\Controllers\\FacilitiesController.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Controllers\\FacilitiesController.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\Controllers\\FacilitiesController.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAiwIwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T03:57:01.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Styles.css",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\wwwroot\\css\\Styles.css",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\wwwroot\\css\\Styles.css",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\wwwroot\\css\\Styles.css",
+              "RelativeToolTip": "GymBookingSystemAPI\\wwwroot\\css\\Styles.css",
+              "ViewState": "AgIAAI0DAAAAAAAAAAAiwKcDAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-28T10:50:49.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Controller\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\Controller\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Controller\\WeatherForecastController.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\Controller\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T12:42:42.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "20250426044254_UpdateGymBranchPrimaryKey.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Migrations\\20250426044254_UpdateGymBranchPrimaryKey.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\Migrations\\20250426044254_UpdateGymBranchPrimaryKey.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Migrations\\20250426044254_UpdateGymBranchPrimaryKey.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\Migrations\\20250426044254_UpdateGymBranchPrimaryKey.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T07:49:54.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "20250426050218_UpdateGymProviderPrimaryKey.cs",
+              "DocumentMoniker": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Migrations\\20250426050218_UpdateGymProviderPrimaryKey.cs",
+              "RelativeDocumentMoniker": "GymBookingSystemAPI\\Migrations\\20250426050218_UpdateGymProviderPrimaryKey.cs",
+              "ToolTip": "C:\\Users\\dolan\\Downloads\\CIDO2\\GymBookingSystem\\GymBookingSystemAPI\\Migrations\\20250426050218_UpdateGymProviderPrimaryKey.cs",
+              "RelativeToolTip": "GymBookingSystemAPI\\Migrations\\20250426050218_UpdateGymProviderPrimaryKey.cs",
+              "ViewState": "AgIAAOEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T07:50:47.395Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 65,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

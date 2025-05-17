@@ -1,0 +1,953 @@
+﻿:root {
+    --primary-color: #1a73e8;
+    --primary-dark: #1557b1;
+    --header-color: #003580;
+    --text-color: #202124;
+    --text-secondary: #5f6368;
+    --white: #ffffff;
+    --light-gray: #f1f3f4;
+    --border-color: #dadce0;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --background-light: #f8f9fa;
+    --booking-yellow: #ffb700;
+    --booking-blue: #003580;
+    --icon-bg: #e6f0fa;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    font-size: 16px;
+    color: var(--text-color);
+    background-color: var(--background-light);
+    padding-top: 120px;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+    a:hover {
+        color: var(--primary-dark);
+    }
+
+/* Header */
+.header {
+    background-color: var(--header-color);
+    z-index: 1000;
+    padding: 0;
+}
+
+/* Cấu trúc header */
+.booking-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.booking-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+    .logo-link:hover {
+        transform: scale(1.05);
+    }
+
+.navbar-logo {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+}
+
+.booking-options {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.currency-option {
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+    .currency-option:hover {
+        color: var(--booking-yellow);
+    }
+
+.language-dropdown {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+    gap: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+    .language-dropdown:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.3);
+    color: var(--white);
+    font-size: 16px;
+    padding: 6px 12px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+    .btn-outline-light:hover {
+        background-color: var(--white);
+        color: var(--booking-blue);
+        border-color: var(--white);
+    }
+
+/* Navigation */
+.booking-nav {
+    padding: 10px 0;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    color: white !important;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+    .nav-link:hover {
+        color: white !important;
+        background-color: transparent;
+        border-bottom: 2px solid var(--booking-yellow);
+        border-radius: 0;
+    }
+
+.nav-item.active .nav-link {
+    color: white !important;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--header-color);
+    color: var(--white);
+    min-height: 400px;
+    position: relative;
+    padding-top: 80px;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://via.placeholder.com/1920x500?text=Hero+Background');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Call to Action: Nút Đặt ngay trong Hero Section */
+.btn-book-now {
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 14px 30px;
+    height: 50px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .btn-book-now:hover {
+        background-color: var(--primary-dark);
+        transform: scale(1.05);
+        color: var(--white);
+    }
+
+/* Search Section */
+.search-section {
+    padding: 0;
+}
+
+.search-bar-container {
+    background-color: var(--white);
+    border: 2px solid var(--booking-yellow);
+    border-radius: 16px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .search-bar-container .input-group {
+        height: 60px;
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        overflow: hidden;
+        transition: border-color 0.3s ease;
+    }
+
+        .search-bar-container .input-group:hover,
+        .search-bar-container .input-group:focus-within {
+            border-color: var(--booking-blue);
+        }
+
+    .search-bar-container .form-control {
+        border: none;
+        border-radius: 12px;
+        padding: 15px;
+        font-size: 18px;
+        box-shadow: none;
+        height: 100%;
+        line-height: 1.5;
+        color: var(--text-color);
+    }
+
+        .search-bar-container .form-control:focus {
+            border: none;
+            box-shadow: none;
+        }
+
+        .search-bar-container .form-control::placeholder {
+            color: var(--text-secondary);
+            opacity: 0.7;
+        }
+
+    .search-bar-container .input-group-text {
+        border: none;
+        border-radius: 12px 0 0 12px;
+        background-color: var(--white);
+        padding: 15px;
+    }
+
+        .search-bar-container .input-group-text i {
+            font-size: 24px;
+            color: var(--text-secondary);
+        }
+
+/* Call to Action: Nút Tìm trong Search Section */
+.btn-search {
+    background-color: var(--booking-blue);
+    border-color: var(--booking-blue);
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 20px;
+    height: 40px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .btn-search:hover {
+        background-color: #002a66;
+        border-color: #002a66;
+        transform: scale(1.02);
+    }
+
+/* Phần Featured Gyms: Grid hiển thị các phòng tập nổi bật với hiệu ứng hover và animation */
+.popular-gyms {
+    background-color: #fff;
+}
+
+.gym-card {
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease forwards;
+    animation-delay: calc(var(--order) * 0.1s);
+}
+
+    /* Hiệu ứng hover: Nâng thẻ lên và phóng to nhẹ */
+    .gym-card:hover {
+        transform: translateY(-5px) scale(1.02);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important;
+    }
+
+/* Animation fadeInUp cho Featured Gyms */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.gym-card:nth-child(1) {
+    --order: 1;
+}
+
+.gym-card:nth-child(2) {
+    --order: 2;
+}
+
+.gym-card:nth-child(3) {
+    --order: 3;
+}
+
+.gym-card-image {
+    height: 250px;
+    overflow: hidden;
+    background-color: var(--light-gray);
+}
+
+    .gym-card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.3s ease;
+    }
+
+.gym-card:hover .gym-card-image img {
+    transform: scale(1.05);
+}
+
+.gym-card-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    .gym-card-content h3 {
+        font-size: 20px;
+    }
+
+    .gym-card-content p {
+        font-size: 16px;
+        color: var(--text-secondary);
+    }
+
+/* Call to Action: Liên kết trong Featured Gyms (Khám Phá, Xem thêm, Đặt Ngay) */
+.gym-card-link {
+    font-weight: 500;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+    .gym-card-link:hover {
+        transform: translateX(5px);
+    }
+
+/* Special Offers */
+.special-offers {
+    background-color: #fff;
+}
+
+.special-offers-label {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+.special-offers-image {
+    border-radius: 8px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+    .special-offers-image:hover {
+        transform: scale(1.02);
+    }
+
+.offer-item {
+    background-color: var(--light-gray);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .offer-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+/* Call to Action Buttons: Nút chung (Đăng ký ngay, Xem chi tiết, Xem thêm, v.v.) */
+.btn-outline-primary {
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+    .btn-outline-primary:hover {
+        background-color: var(--primary-color);
+        color: var(--white);
+        transform: scale(1.05);
+    }
+
+/* Trainers Section */
+.trainers {
+    background-color: #fff;
+}
+
+.trainer-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease forwards;
+    animation-delay: calc(var(--order) * 0.1s);
+}
+
+    .trainer-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .trainer-card:nth-child(1) {
+        --order: 1;
+    }
+
+    .trainer-card:nth-child(2) {
+        --order: 2;
+    }
+
+    .trainer-card:nth-child(3) {
+        --order: 3;
+    }
+
+.trainer-icon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--icon-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+}
+
+    .trainer-icon i {
+        color: var(--primary-color);
+        font-size: 30px;
+    }
+
+.trainer-card:hover .trainer-icon {
+    background-color: rgba(26, 115, 232, 0.2);
+}
+
+/* Call to Action: Liên kết trong Trainers (Tìm hiểu, Xem thêm, Đăng ký) */
+.trainer-link {
+    font-weight: 500;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+    .trainer-link:hover {
+        transform: translateX(5px);
+    }
+
+/* Phần Membership Plans: Cards hiển thị các gói tập và bảng so sánh */
+.membership-plans {
+    background-color: #fff;
+}
+
+.plan-card {
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease forwards;
+    animation-delay: calc(var(--order) * 0.1s);
+}
+
+    /* Hiệu ứng hover: Nâng thẻ lên */
+    .plan-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .plan-card:nth-child(1) {
+        --order: 1;
+    }
+
+    .plan-card:nth-child(2) {
+        --order: 2;
+    }
+
+    .plan-card:nth-child(3) {
+        --order: 3;
+    }
+
+.plan-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--icon-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+}
+
+    .plan-icon i {
+        color: var(--primary-color);
+        font-size: 24px;
+    }
+
+.plan-card:hover .plan-icon {
+    background-color: rgba(26, 115, 232, 0.2);
+}
+
+/* Call to Action: Nút "Chọn gói" trong Membership Plans */
+.plan-card .btn-outline-primary {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+    .plan-card .btn-outline-primary:hover {
+        background-color: var(--primary-color);
+        color: var(--white);
+        transform: scale(1.05);
+    }
+
+/* Bảng so sánh các gói tập trong Membership Plans */
+.comparison-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+
+.comparison-table th {
+    background-color: var(--light-gray);
+    font-weight: 600;
+}
+
+.comparison-table td:first-child {
+    text-align: left;
+    font-weight: 500;
+}
+
+.comparison-table i {
+    font-size: 18px;
+}
+
+.comparison-table .fa-check {
+    color: var(--success-color);
+}
+
+.comparison-table .fa-times {
+    color: var(--danger-color);
+}
+
+/* Footer Section */
+.footer {
+    background-color: var(--header-color);
+    color: var(--white);
+}
+
+.footer-logo {
+    height: 60px;
+    width: auto;
+}
+
+.footer-column a {
+    color: var(--white);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+    .footer-column a:hover {
+        opacity: 1;
+        transform: translateX(5px);
+    }
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+    .back-to-top i {
+        color: var(--white);
+        font-size: 20px;
+    }
+
+    .back-to-top:hover {
+        background-color: var(--primary-dark);
+        transform: scale(1.1);
+    }
+
+/* Style cho icon trong footer */
+.footer-column a i {
+    color: var(--white);
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-column a:hover i {
+    color: var(--booking-yellow);
+    transform: translateX(3px);
+}
+
+/* Updated Styles for Provider Dashboard */
+
+/* Improve Table Styling */
+.table-responsive {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    margin-bottom: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: var(--white);
+}
+
+    .table th {
+        background-color: var(--booking-blue);
+        color: var(--white);
+        font-weight: 600;
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 2px solid var(--border-color);
+    }
+
+    .table td {
+        padding: 12px 15px;
+        vertical-align: middle;
+        border-bottom: 1px solid var(--border-color);
+        color: var(--text-color);
+    }
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.table-striped tbody tr:hover {
+    background-color: rgba(26, 115, 232, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Button Styling for Actions */
+.btn {
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 80px;
+    justify-content: center;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+    .btn-primary:hover {
+        background-color: var(--primary-dark);
+        border-color: var(--primary-dark);
+        transform: scale(1.02);
+    }
+
+.btn-success {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+}
+
+    .btn-success:hover {
+        background-color: #218838;
+        border-color: #218838;
+        transform: scale(1.02);
+    }
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: var(--text-color);
+}
+
+    .btn-warning:hover {
+        background-color: #e0a800;
+        border-color: #e0a800;
+        transform: scale(1.02);
+    }
+
+.btn-danger {
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+}
+
+    .btn-danger:hover {
+        background-color: #c82333;
+        border-color: #c82333;
+        transform: scale(1.02);
+    }
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+    .btn-info:hover {
+        background-color: #138496;
+        border-color: #138496;
+        transform: scale(1.02);
+    }
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+    .btn-secondary:hover {
+        background-color: #5a6268;
+        border-color: #5a6268;
+        transform: scale(1.02);
+    }
+
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    background-color: var(--light-gray);
+    border-bottom: 1px solid var(--border-color);
+    padding: 15px 20px;
+}
+
+.modal-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+    .modal-body h6 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--text-color);
+        margin-bottom: 15px;
+    }
+
+    .modal-body .form-label {
+        font-weight: 500;
+        color: var(--text-color);
+        margin-bottom: 8px;
+    }
+
+    .modal-body .form-control {
+        border-radius: 6px;
+        border: 1px solid var(--border-color);
+        padding: 10px 15px;
+        font-size: 16px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .modal-body .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 5px rgba(26, 115, 232, 0.3);
+            outline: none;
+        }
+
+    .modal-body .form-check-label {
+        font-size: 16px;
+        color: var(--text-secondary);
+    }
+
+.modal-footer {
+    border-top: 1px solid var(--border-color);
+    padding: 15px 20px;
+}
+
+/* Section Styling */
+.provider-dashboard {
+    padding: 40px 0;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+    .provider-dashboard h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--text-color);
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+/* Form Checkboxes */
+.form-check-input {
+    width: 18px;
+    height: 18px;
+    margin-top: 4px;
+}
+
+.form-check-label {
+    margin-left: 8px;
+    font-size: 16px;
+}
+
+/* Action Buttons Layout */
+.provider-dashboard .btn-group {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.provider-dashboard .btn {
+    white-space: nowrap;
+}
+
+/* Custom Table Buttons */
+.table .btn {
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
+    .table .btn i {
+        margin-right: 4px;
+    }
+
+/* Status Buttons */
+.toggle-status-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .provider-dashboard h1 {
+        font-size: 1.75rem;
+    }
+
+    .table th,
+    .table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .modal-body {
+        padding: 15px;
+    }
+
+        .modal-body .form-control {
+            font-size: 14px;
+            padding: 8px 12px;
+        }
+
+    .provider-dashboard .btn-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .provider-dashboard .btn {
+        width: 100%;
+    }
+}
